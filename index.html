@@ -1,159 +1,851 @@
-﻿<!DOCTYPE html>
-<html lang="zh-Hant-TW">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 佛光會世界會員代表大會 預購目錄</title>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 佛光會世界會員代表大會｜品項預購電子目錄</title>
 <style>
-:root{--green:#14532d;--green2:#166534;--gold:#d97706;--bg:#f6f4ef}
+:root{--green:#166534;--orange:#e07b1f;--ink:#222;--muted:#666;--bg:#f6f3ec;--card:#fff;--line:#e7e2d8}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:#111;font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif}
-header{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;text-align:center;padding:26px 14px 22px}
-h1{font-size:26px;margin:0 0 6px}
-.sub{opacity:.9;margin:0 0 14px;font-size:14px}
-.btn{display:inline-block;background:var(--gold);color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:700}
-.toolbar{position:sticky;top:0;background:#fff;z-index:50;padding:10px 14px;border-bottom:1px solid #ddd}
-input{width:100%;padding:12px 14px;border:1px solid #bbb;border-radius:12px;font-size:16px}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 14px;background:#fff;border-bottom:1px solid #ddd;position:sticky;top:54px;z-index:40}
-.chips a{white-space:nowrap;text-decoration:none;background:#eee;color:#222;padding:7px 12px;border-radius:999px;font-size:13px}
-main{padding:14px 14px 100px}
-section{margin-top:20px;background:#fff;border-radius:14px;padding:14px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
-section h2{margin:0 0 12px;color:var(--green);font-size:20px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-section h2 small{color:#666;font-size:13px;font-weight:400}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.card{border:1px solid #e5e5e5;border-radius:12px;padding:10px;background:#fff;display:flex;flex-direction:column}
-.card .footer{margin-top:auto;padding-top:8px}
-.card .footer a{display:block;text-align:center;background:var(--gold);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:700}
-.card .footer a:hover{background:#b45309}
-.photo{width:100%;min-height:170px;background:#f5f5f5;border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.photo img{width:100%;height:auto;max-height:230px;object-fit:contain;display:block}
-.ph{font-size:13px;color:#999;padding:54px 12px;text-align:center}
-.title{font-size:15px;font-weight:800;margin:10px 0 4px;line-height:1.4}
-.brand-tag{font-size:11px;color:var(--gold);font-weight:700;margin-bottom:3px}
-.desc{font-size:13px;color:#444;line-height:1.5}
-.price{font-size:18px;font-weight:900;margin:8px 0;color:#111}
-.note{font-size:12px;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;padding:6px 8px;border-radius:8px;margin-top:6px}
-.float{position:fixed;right:18px;bottom:18px;width:66px;height:66px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.25);z-index:60}
-.label{position:fixed;right:92px;bottom:28px;background:#111;color:#fff;padding:6px 10px;border-radius:9px;font-size:13px;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
-.float:hover+.label,.label:hover{opacity:1}
-footer{padding:24px;text-align:center;color:#555;font-size:13px}
-a.form{text-decoration:none}
-@media(max-width:600px){.grid{grid-template-columns:1fr}.float{width:58px;height:58px;font-size:24px}}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink)}
+.hero{background:linear-gradient(135deg,#1f7a44,#0e4d29);color:#fff;padding:42px 20px 46px;text-align:center}
+.hero h1{margin:0;font-size:26px;letter-spacing:1px}
+.hero p{margin:10px 0 0;font-size:14px;opacity:.9}
+.hero .cta{display:inline-block;margin-top:18px;background:var(--orange);color:#fff;text-decoration:none;padding:12px 22px;border-radius:26px;font-size:15px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.hero .cta:active{transform:scale(.98)}
+.toolbar{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line);padding:12px 16px}
+.toolbar input{width:100%;height:48px;border:1px solid var(--line);border-radius:12px;padding:0 16px;font-size:15px}
+.chips{position:sticky;top:60px;z-index:29;background:#fff;border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:10px 16px;-webkit-overflow-scrolling:touch}
+.chips a{flex-shrink:0;font-size:14px;padding:8px 14px;border-radius:20px;background:#eef3ef;color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap}
+.chips a:hover,.chips a.on{background:var(--green);color:#fff}
+main{max-width:1080px;margin:0 auto;padding:18px 16px 90px}
+section{padding:12px 0}
+h2{display:flex;align-items:center;gap:8px;font-size:18px;margin:16px 0 12px;padding:12px 16px;background:var(--card);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h2 small{font-size:12px;color:var(--muted);margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{position:relative;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.card .photo{position:relative;height:190px;background:#eee}
+.card .photo img{width:100%;height:100%;object-fit:cover;display:block}
+.card .ph{height:100%;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px}
+.card .brand-tag{font-size:12px;color:var(--green);background:#eef3ef;padding:6px 12px;font-weight:700}
+.card .title{font-size:16px;font-weight:800;padding:8px 12px 2px;line-height:1.35}
+.card .desc{font-size:13px;color:var(--muted);padding:2px 12px}
+.card .price{font-size:16px;font-weight:800;color:#c0392b;padding:6px 12px 2px}
+.card .note{font-size:12px;color:var(--muted);padding:2px 12px}
+.card .tag{align-self:flex-start;margin:4px 12px 0;font-size:12px;padding:2px 8px;border-radius:10px;font-weight:700}
+.card .footer{padding:8px 12px;border-top:1px solid #f0f0f0;margin-top:auto}
+.card .footer a{color:var(--green);text-decoration:none;font-size:13px;font-weight:700}
+.tag.b-cash{background:#fff3e0;color:#e67e00;border:1px solid #f0c080}
+.tag.b-transfer{background:#e8f5e9;color:var(--green);border:1px solid #86c08e}
+.tag.b-both{background:#e3f2fd;color:#1565c0;border:1px solid #90caf9}
+.zoom{position:absolute;right:8px;bottom:8px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--green);text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.menu-fab{display:none;position:fixed;right:16px;bottom:84px;z-index:35;width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;border:none;font-size:24px;box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.cart-fab{position:fixed;right:16px;bottom:24px;z-index:35;width:60px;height:60px;border-radius:50%;background:var(--orange);color:#fff;border:none;font-size:26px;box-shadow:0 8px 18px rgba(0,0,0,.32);display:flex;align-items:center;justify-content:center;text-decoration:none}
+.cart-fab span{position:absolute;inset:0;background:rgba(255,255,255,.15);border-radius:50%}
+.drawer{position:fixed;top:0;left:-300px;width:290px;max-width:85vw;height:100vh;background:#fff;z-index:70;transition:left .25s;box-shadow:2px 0 18px rgba(0,0,0,.2)}
+.drawer.open{left:0}
+.drawer .head{display:flex;justify-content:space-between;align-items:center;padding:16px;background:var(--green);color:#fff;font-size:18px;font-weight:800}
+.drawer .head button{border:none;background:none;color:#fff;font-size:30px;line-height:1}
+.drawer .list{padding:10px;overflow:auto}
+.drawer .list a{display:block;padding:14px 16px;border-radius:10px;color:var(--green);text-decoration:none;font-size:15px;font-weight:700;margin:6px 0;background:#f3f8f3}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
+.overlay.show{opacity:1;pointer-events:auto}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:16px}
+.lightbox.show{display:flex}
+.lightbox img{max-width:100%;max-height:85vh;object-fit:contain;border-radius:8px;background:#fff}
+.lb-close{position:absolute;top:12px;right:14px;color:#fff;font-size:34px;line-height:1;border:none;background:none;z-index:101}
+.hidden{display:none!important}
+.foot{text-align:center;padding:24px 16px;font-size:13px;color:#999}
+@media(max-width:767px){
+  .hero{padding:30px 16px 34px}
+  .hero h1{font-size:21px}
+  .grid{grid-template-columns:1fr 1fr;gap:10px}
+  .card .photo{height:130px}
+  .card .title{font-size:14px}
+  .card .desc,.card .note{font-size:12px}
+  .card .price{font-size:14px}
+  .menu-fab{display:block}
+}
+@media(max-width:430px){
+  .grid{grid-template-columns:1fr}
+  .card .photo{height:170px}
+}
 </style>
 </head>
-<body>
-<header>
-<h1>2026 佛光會世界會員代表大會</h1>
-<p class="sub">品項預購電子目錄｜可快速搜尋品牌與商品</p>
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往下單（Google 預購表單）</a>
+<body id="top">
+<header class="hero">
+  <h1>2026 佛光會世界會員代表大會</h1>
+  <p>品項預購電子目錄｜可快速搜尋品牌與商品</p>
+  <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往下單（Google 預購表單）</a>
 </header>
-<div class="toolbar"><input id="q" placeholder="輸入品牌或商品關鍵字，例如：檸檬、豆漿、腰果" autocomplete="off"></div>
-<div class="chips" id="chips"></div>
-<main id="app"></main>
-<a class="float" href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">🛒</a><div class="label">預購連結</div>
-<footer>© 2026 佛光會預購目錄</footer>
+<div class="toolbar"><input id="q" placeholder="輸入品牌或商品關鍵字，例如：佛光好事集、高蛋白豆漿湯杯" autocomplete="off"></div>
+<div class="chips" id="chips"><a href='#top'>全部</a><a href="#b0">佛光好事集</a><a href="#b1">每日啡商行</a><a href="#b2">卡帛素食烘焙義式廚房</a><a href="#b3">鬍子國王蛋捲+光頭呂手作抓餅</a><a href="#b4">穎禾甜食</a><a href="#b5">綠綠發芽希望工坊</a><a href="#b6">檸檬大叔</a><a href="#b7">十八味草本茶</a><a href="#b8">冊子</a><a href="#b9">天昱坊</a><a href="#b10">植得蔬食</a><a href="#b11">裕寺蔬食炸物｜潤餅</a><a href="#b12">慢活•森咖啡</a><a href="#b13">菓迷方脆腰果</a><a href='#top'>回頂端</a></div>
+<main id="app"><section id="b0">
+        <h2><span>佛光好事集</span><small>7 項</small></h2>
+        <div class="grid"><article class="card" data-search="佛光好事集 高蛋白豆漿湯杯（本次活動限定款） 鹹熱湯（杯湯） 組合式附杯碗＋小麥湯匙、豆漿湯底沖泡25g／特別加入蔬菜（海帶芽、蘑菇、四季豆、紅蘿蔔、玉米） 當天售價 60元 ｜ 預購價 55元/杯">
+            <div class="photo"><img src="https://i.ibb.co/0VGYnt8G/01.jpg" alt="高蛋白豆漿湯杯（本次活動限定款）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/0VGYnt8G/01.jpg" href="https://i.ibb.co/0VGYnt8G/01.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">高蛋白豆漿湯杯（本次活動限定款）</div>
+            <div class="desc">鹹熱湯（杯湯）</div><div class="desc">規格：組合式附杯碗＋小麥湯匙、豆漿湯底沖泡25g／特別加入蔬菜（海帶芽、蘑菇、四季豆、紅蘿蔔、玉米）</div><div class="price">當天售價 60元 ｜ 預購價 55元/杯</div><div class="note">預購 50 杯以上，一杯只要 50元</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="佛光好事集 高蛋白豆漿湯底（沖泡） 鹹熱湯（隨身包） 10入/盒 390元/盒">
+            <div class="photo"><img src="https://i.ibb.co/M58bB9y9/10-012.jpg" alt="高蛋白豆漿湯底（沖泡）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/M58bB9y9/10-012.jpg" href="https://i.ibb.co/M58bB9y9/10-012.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">高蛋白豆漿湯底（沖泡）</div>
+            <div class="desc">鹹熱湯（隨身包）</div><div class="desc">規格：10入/盒</div><div class="price">390元/盒</div><div class="note">10/2、10/3 皆可取貨（匯款、現金皆可）</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="佛光好事集 豌豆分離蛋白粉 經典原味／五穀黑雪花 1kg 1280元">
+            <div class="photo"><img src="https://i.ibb.co/5gykTqHw/1kkg.png" alt="豌豆分離蛋白粉" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/5gykTqHw/1kkg.png" href="https://i.ibb.co/5gykTqHw/1kkg.png" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">豌豆分離蛋白粉</div>
+            <div class="desc">經典原味／五穀黑雪花</div><div class="desc">規格：1KG</div><div class="price">1280元</div><div class="note">10/2、10/3 皆可取貨（僅可接受預購匯款）</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="佛光好事集 甘糀｜353種營養素 豐富營養  6入/盒（禮盒裝）
+48入（箱）無禮盒 長期保養優惠 禮盒裝 600元｜整箱 3500元">
+            <div class="photo"><img src="https://i.ibb.co/84tsPnjc/6-48-01.jpg" alt="甘糀｜353種營養素 豐富營養" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/84tsPnjc/6-48-01.jpg" href="https://i.ibb.co/84tsPnjc/6-48-01.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">甘糀｜353種營養素 豐富營養</div>
+            <div class="desc">規格：6入/盒（禮盒裝）
+48入（箱）無禮盒 長期保養優惠</div><div class="price">禮盒裝 600元｜整箱 3500元</div><div class="note">10/2、10/3 皆可取貨（僅可接受預購匯款）</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="佛光好事集 南漂阿北 素排骨酥麵線糊  大碗｜小碗 大碗 80元｜小碗 60元">
+            <div class="photo"><img src="https://i.ibb.co/VYkpFsz0/image.png" alt="南漂阿北 素排骨酥麵線糊" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/VYkpFsz0/image.png" href="https://i.ibb.co/VYkpFsz0/image.png" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">南漂阿北 素排骨酥麵線糊</div>
+            <div class="desc">規格：大碗｜小碗</div><div class="price">大碗 80元｜小碗 60元</div><div class="note">（僅可接受現場現金付款）預購限 10/3 活動當天領取，10/2 不開放取貨</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="佛光好事集 給v南洋料理 咖哩g（猴頭菇）   120元">
+            <div class="photo"><img src="https://i.ibb.co/4wYb7H20/V-G.jpg" alt="給V南洋料理 咖哩G（猴頭菇）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/4wYb7H20/V-G.jpg" href="https://i.ibb.co/4wYb7H20/V-G.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">給V南洋料理 咖哩G（猴頭菇）</div>
+            <div class="price">120元</div><div class="note">（僅可接受現場現金付款）預購限 10/3 活動當天領取，10/2 不開放取貨</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="佛光好事集 給v南洋料理 香料天貝   100元">
+            <div class="photo"><img src="https://i.ibb.co/r2SNMqQy/V.jpg" alt="給V南洋料理 香料天貝" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/r2SNMqQy/V.jpg" href="https://i.ibb.co/r2SNMqQy/V.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">佛光好事集</div>
+            <div class="title">給V南洋料理 香料天貝</div>
+            <div class="price">100元</div><div class="note">（僅限預購）預購限 10/3 活動當天領取，現場無販售，10/2 不開放取貨</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b1">
+        <h2><span>每日啡商行</span><small>3 項</small></h2>
+        <div class="grid"><article class="card" data-search="每日啡商行 每日銀耳露（微糖） 組合方案：每日銀耳露、每日黑木耳  70元">
+            <div class="photo"><img src="https://i.ibb.co/LdFQy0Yy/image.png" alt="每日銀耳露（微糖）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/LdFQy0Yy/image.png" href="https://i.ibb.co/LdFQy0Yy/image.png" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">每日啡商行</div>
+            <div class="title">每日銀耳露（微糖）</div>
+            <div class="desc">組合方案：每日銀耳露、每日黑木耳</div><div class="price">70元</div><div class="note">預購優惠價：
+兩種口味各五瓶共10瓶 = 600元（原價700元）
+每日銀耳露預購10瓶 = 600元（原價700元）
+每日黑木耳露預購10瓶 = 600元（原價700元）</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="每日啡商行 每日黑木耳露（無糖） 組合方案：每日銀耳露、每日黑木耳  70元">
+            <div class="photo"><img src="https://i.ibb.co/JRfs95kw/image.png" alt="每日黑木耳露（無糖）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/JRfs95kw/image.png" href="https://i.ibb.co/JRfs95kw/image.png" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">每日啡商行</div>
+            <div class="title">每日黑木耳露（無糖）</div>
+            <div class="desc">組合方案：每日銀耳露、每日黑木耳</div><div class="price">70元</div><div class="note">預購優惠價：
+兩種口味各五瓶共10瓶 = 600元（原價700元）
+每日銀耳露預購10瓶 = 600元（原價700元）
+每日黑木耳露預購10瓶 = 600元（原價700元）</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="每日啡商行 每日薏仁湯（微糖） 一碗溫潤，喝進四種穀豆營養 無添加糖／精心熬煮8小時／每罐60元 60元">
+            <div class="photo"><img src="https://i.ibb.co/mrFH7v4L/image.png" alt="每日薏仁湯（微糖）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/mrFH7v4L/image.png" href="https://i.ibb.co/mrFH7v4L/image.png" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">每日啡商行</div>
+            <div class="title">每日薏仁湯（微糖）</div>
+            <div class="desc">一碗溫潤，喝進四種穀豆營養</div><div class="desc">規格：無添加糖／精心熬煮8小時／每罐60元</div><div class="price">60元</div><div class="note">僅接受預購匯款</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b2">
+        <h2><span>卡帛素食烘焙義式廚房</span><small>13 項</small></h2>
+        <div class="grid"><article class="card" data-search="卡帛素食烘焙義式廚房 1號餐盒 日式和風壽司／櫻桃雪霜／青青小棠／小火腿起司麵包  預購價 $126">
+            <div class="photo"><img src="https://i.ibb.co/XxnRJN09/1.jpg" alt="1號餐盒" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/XxnRJN09/1.jpg" href="https://i.ibb.co/XxnRJN09/1.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">1號餐盒</div>
+            <div class="desc">日式和風壽司／櫻桃雪霜／青青小棠／小火腿起司麵包</div><div class="price">預購價 $126</div><div class="note">原價 $140</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 2號餐盒 抹茶紅豆毛巾捲／長生果堡／銅鑼燒／日式和風壽司／小火腿起司  預購價 $275">
+            <div class="photo"><img src="https://i.ibb.co/wr6YpdjK/2.jpg" alt="2號餐盒" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/wr6YpdjK/2.jpg" href="https://i.ibb.co/wr6YpdjK/2.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">2號餐盒</div>
+            <div class="desc">抹茶紅豆毛巾捲／長生果堡／銅鑼燒／日式和風壽司／小火腿起司</div><div class="price">預購價 $275</div><div class="note">原價 $295</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 3號餐盒 小火腿起司麵包／麻糬燒／櫻桃雪霜／花漾泡芙／迷你脆皮巧克力  預購價 $168">
+            <div class="photo"><img src="https://i.ibb.co/spFvYqw6/3.jpg" alt="3號餐盒" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/spFvYqw6/3.jpg" href="https://i.ibb.co/spFvYqw6/3.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">3號餐盒</div>
+            <div class="desc">小火腿起司麵包／麻糬燒／櫻桃雪霜／花漾泡芙／迷你脆皮巧克力</div><div class="price">預購價 $168</div><div class="note">原價 $188</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 4號餐盒 藍莓鄉村／芝士煙燻／花漾泡芙／小火腿起司麵包／蕾絲朱古力  預購價 $195">
+            <div class="photo"><img src="https://i.ibb.co/Gg6vcfN/4.jpg" alt="4號餐盒" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/Gg6vcfN/4.jpg" href="https://i.ibb.co/Gg6vcfN/4.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">4號餐盒</div>
+            <div class="desc">藍莓鄉村／芝士煙燻／花漾泡芙／小火腿起司麵包／蕾絲朱古力</div><div class="price">預購價 $195</div><div class="note">原價 $215</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 托斯卡尼蛋糕（4寸） （奶素）  預購價 $150">
+            <div class="photo"><img src="https://i.ibb.co/RkVwybCt/6-4.jpg" alt="托斯卡尼蛋糕（4寸）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/RkVwybCt/6-4.jpg" href="https://i.ibb.co/RkVwybCt/6-4.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">托斯卡尼蛋糕（4寸）</div>
+            <div class="desc">（奶素）</div><div class="price">預購價 $150</div><div class="note">原價 $168</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 托斯卡尼蛋糕（6寸） （奶素）  預購價 $260">
+            <div class="photo"><img src="https://i.ibb.co/RkVwybCt/6-4.jpg" alt="托斯卡尼蛋糕（6寸）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/RkVwybCt/6-4.jpg" href="https://i.ibb.co/RkVwybCt/6-4.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">托斯卡尼蛋糕（6寸）</div>
+            <div class="desc">（奶素）</div><div class="price">預購價 $260</div><div class="note">原價 $288</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 脆皮巧克力卷 （奶素）原味／香草 兩種口味  預購價 $90">
+            <div class="photo"><img src="https://i.ibb.co/23VSbdt1/image.jpg" alt="脆皮巧克力卷" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/23VSbdt1/image.jpg" href="https://i.ibb.co/23VSbdt1/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">脆皮巧克力卷</div>
+            <div class="desc">（奶素）原味／香草 兩種口味</div><div class="price">預購價 $90</div><div class="note">原價 $100</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 香草脆皮巧克力 （奶素）  預購價 $90">
+            <div class="photo"><img src="https://i.ibb.co/23VSbdt1/image.jpg" alt="香草脆皮巧克力" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/23VSbdt1/image.jpg" href="https://i.ibb.co/23VSbdt1/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">香草脆皮巧克力</div>
+            <div class="desc">（奶素）</div><div class="price">預購價 $90</div><div class="note">原價 $100</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 人氣小火腿起司麵包 （奶素）2入/包  $50">
+            <div class="photo"><img src="https://i.ibb.co/hRmsrPt1/image.jpg" alt="人氣小火腿起司麵包" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/hRmsrPt1/image.jpg" href="https://i.ibb.co/hRmsrPt1/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">人氣小火腿起司麵包</div>
+            <div class="desc">（奶素）2入/包</div><div class="price">$50</div><div class="note">預購付款方式：當天付款／僅接受預購匯款</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 鹹蛋糕（原味玉米香鬆） （奶素）  預購價 $190">
+            <div class="photo"><img src="https://i.ibb.co/LdyXNCWz/image.png" alt="鹹蛋糕（原味玉米香鬆）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/LdyXNCWz/image.png" href="https://i.ibb.co/LdyXNCWz/image.png" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">鹹蛋糕（原味玉米香鬆）</div>
+            <div class="desc">（奶素）</div><div class="price">預購價 $190</div><div class="note">原價 $220</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 鹹蛋糕（港式橄欖菜乾酪） （奶素）  預購價 $235">
+            <div class="photo"><img src="https://i.ibb.co/Wp4zXrZK/2.jpg" alt="鹹蛋糕（港式橄欖菜乾酪）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/Wp4zXrZK/2.jpg" href="https://i.ibb.co/Wp4zXrZK/2.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">鹹蛋糕（港式橄欖菜乾酪）</div>
+            <div class="desc">（奶素）</div><div class="price">預購價 $235</div><div class="note">預購付款方式：當天付款／僅接受預購匯款</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 鴛鴦餅 （奶素）6入/盒  $520">
+            <div class="photo"><img src="https://i.ibb.co/wZmrB6R7/6.jpg" alt="鴛鴦餅" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/wZmrB6R7/6.jpg" href="https://i.ibb.co/wZmrB6R7/6.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">鴛鴦餅</div>
+            <div class="desc">（奶素）6入/盒</div><div class="price">$520</div><div class="note">預購付款方式：當天付款／僅接受預購匯款</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="卡帛素食烘焙義式廚房 乳酪手捲 （奶素）原味／抹茶紅豆／芋泥／芝麻／巧克力／咖啡 6入/袋  $350">
+            <div class="photo"><img src="https://i.ibb.co/wZmrB6R7/6.jpg" alt="乳酪手捲" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/wZmrB6R7/6.jpg" href="https://i.ibb.co/wZmrB6R7/6.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">卡帛素食烘焙義式廚房</div>
+            <div class="title">乳酪手捲</div>
+            <div class="desc">（奶素）原味／抹茶紅豆／芋泥／芝麻／巧克力／咖啡 6入/袋</div><div class="price">$350</div><div class="note">預購付款方式：當天付款／僅接受預購匯款</div>
+            <span class="tag b-both">當日/匯款皆可</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b3">
+        <h2><span>鬍子國王蛋捲+光頭呂手作抓餅</span><small>13 項</small></h2>
+        <div class="grid"><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（開心果奶酥）  1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/6cxrvbgs/image.jpg" alt="鬍子國王手工蛋捲（開心果奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/6cxrvbgs/image.jpg" href="https://i.ibb.co/6cxrvbgs/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（開心果奶酥）</div>
+            <div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（濃醇奶酥）  1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/ymvdzzL3/image.jpg" alt="鬍子國王手工蛋捲（濃醇奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/ymvdzzL3/image.jpg" href="https://i.ibb.co/ymvdzzL3/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（濃醇奶酥）</div>
+            <div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（北海道純生乳奶酥） 人氣王 1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/39bQZM3g/image.jpg" alt="鬍子國王手工蛋捲（北海道純生乳奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/39bQZM3g/image.jpg" href="https://i.ibb.co/39bQZM3g/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（北海道純生乳奶酥）</div>
+            <div class="desc">人氣王</div><div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（巧克力奶酥） 新品上市 1罐 $380">
+            <div class="photo"><img src="https://i.ibb.co/8gQqLY8d/image.jpg" alt="鬍子國王手工蛋捲（巧克力奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/8gQqLY8d/image.jpg" href="https://i.ibb.co/8gQqLY8d/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（巧克力奶酥）</div>
+            <div class="desc">新品上市</div><div class="desc">規格：1罐</div><div class="price">$380</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（石磨黑芝麻） 黑芝麻餡 1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/d4mcnGCt/image.jpg" alt="鬍子國王手工蛋捲（石磨黑芝麻）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/d4mcnGCt/image.jpg" href="https://i.ibb.co/d4mcnGCt/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（石磨黑芝麻）</div>
+            <div class="desc">黑芝麻餡</div><div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（濃花生） 黑金剛花生 1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/ZzZspt7h/image.jpg" alt="鬍子國王手工蛋捲（濃花生）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/ZzZspt7h/image.jpg" href="https://i.ibb.co/ZzZspt7h/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（濃花生）</div>
+            <div class="desc">黑金剛花生</div><div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 職人手作抓餅（海苔）  1袋 $350">
+            <div class="photo"><img src="https://i.ibb.co/27sxSCNx/image.jpg" alt="光頭呂 職人手作抓餅（海苔）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/27sxSCNx/image.jpg" href="https://i.ibb.co/27sxSCNx/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅（海苔）</div>
+            <div class="desc">規格：1袋</div><div class="price">$350</div><div class="note">僅接受預購匯款</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 職人手作抓餅（香椿）  1袋 $350">
+            <div class="photo"><img src="https://i.ibb.co/YBT3F5qd/image.jpg" alt="光頭呂 職人手作抓餅（香椿）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/YBT3F5qd/image.jpg" href="https://i.ibb.co/YBT3F5qd/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅（香椿）</div>
+            <div class="desc">規格：1袋</div><div class="price">$350</div><div class="note">僅接受預購匯款</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 起司膨膨（餡餅） 起司 1個 $60">
+            <div class="photo"><img src="https://i.ibb.co/PscBxBJq/image.jpg" alt="光頭呂 起司膨膨（餡餅）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/PscBxBJq/image.jpg" href="https://i.ibb.co/PscBxBJq/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">光頭呂 起司膨膨（餡餅）</div>
+            <div class="desc">起司</div><div class="desc">規格：1個</div><div class="price">$60</div><div class="note">僅接受預購匯款</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 品牌保冰袋  1袋 $100">
+            <div class="photo"><img src="https://i.ibb.co/SZTwyw6/image.jpg" alt="光頭呂 品牌保冰袋" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/SZTwyw6/image.jpg" href="https://i.ibb.co/SZTwyw6/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">光頭呂 品牌保冰袋</div>
+            <div class="desc">規格：1袋</div><div class="price">$100</div><div class="note">僅接受預購匯款</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（宇治抹茶奶酥）  1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/CsThYx41/image.jpg" alt="鬍子國王手工蛋捲（宇治抹茶奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/CsThYx41/image.jpg" href="https://i.ibb.co/CsThYx41/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（宇治抹茶奶酥）</div>
+            <div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（濃郁奶酥）  1罐 $350">
+            <div class="photo"><img src="https://i.ibb.co/C5pYs49t/image.jpg" alt="鬍子國王手工蛋捲（濃郁奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/C5pYs49t/image.jpg" href="https://i.ibb.co/C5pYs49t/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">鬍子國王手工蛋捲（濃郁奶酥）</div>
+            <div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 職人手作抓餅   ">
+            <div class="photo"><img src="https://i.ibb.co/x8Ff0Ldb/image.jpg" alt="光頭呂 職人手作抓餅" loading="lazy" decoding="async"><a class="zoom" data-full="https://i.ibb.co/x8Ff0Ldb/image.jpg" href="https://i.ibb.co/x8Ff0Ldb/image.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅</div>
+            <div class="note">僅接受預購匯款</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b4">
+        <h2><span>穎禾甜食</span><small>7 項</small></h2>
+        <div class="grid"><article class="card" data-search="穎禾甜食 青檸糖霜腰果磅蛋糕   100元/盒">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">青檸糖霜腰果磅蛋糕</div>
+            <div class="price">100元/盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="穎禾甜食 無花果法芙娜可可磅蛋糕   100元/盒">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">無花果法芙娜可可磅蛋糕</div>
+            <div class="price">100元/盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="穎禾甜食 有機玫瑰蔓越莓磅蛋糕   100元/盒">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">有機玫瑰蔓越莓磅蛋糕</div>
+            <div class="price">100元/盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="穎禾甜食 香蕉核桃磅蛋糕   100元/盒">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">香蕉核桃磅蛋糕</div>
+            <div class="price">100元/盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="穎禾甜食 香烤杏仁可可脆片  （袋） 100元/袋">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">香烤杏仁可可脆片</div>
+            <div class="desc">規格：（袋）</div><div class="price">100元/袋</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="穎禾甜食 德式雪球餅乾 椰子 / 紫心地瓜 / 黑芝麻 （袋） 100元/袋">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">德式雪球餅乾</div>
+            <div class="desc">椰子 / 紫心地瓜 / 黑芝麻</div><div class="desc">規格：（袋）</div><div class="price">100元/袋</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="穎禾甜食 純素司康 黑糖桂圓荔枝 / 百香果文山青茶 / 火龍果四莓果 3顆一袋 200元/袋">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">穎禾甜食</div>
+            <div class="title">純素司康</div>
+            <div class="desc">黑糖桂圓荔枝 / 百香果文山青茶 / 火龍果四莓果</div><div class="desc">規格：3顆一袋</div><div class="price">200元/袋</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b5">
+        <h2><span>綠綠發芽希望工坊</span><small>8 項</small></h2>
+        <div class="grid"><article class="card" data-search="綠綠發芽希望工坊 好丘貝果 原味小麥 / 四季春 / 野生桑葚 / 花生可可 / 桂花紫薯 / 瑪格麗特 一串六入 450元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">好丘貝果</div>
+            <div class="desc">原味小麥 / 四季春 / 野生桑葚 / 花生可可 / 桂花紫薯 / 瑪格麗特</div><div class="desc">規格：一串六入</div><div class="price">450元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 七見櫻堂甜點 鹽之花費南雪 / 香草瑪德蓮 / 伯爵達克瓦茲 一袋三入 200元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">七見櫻堂甜點</div>
+            <div class="desc">鹽之花費南雪 / 香草瑪德蓮 / 伯爵達克瓦茲</div><div class="desc">規格：一袋三入</div><div class="price">200元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 幸福千千歲黑豆茶包  一袋(15入立體茶包) 300元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">幸福千千歲黑豆茶包</div>
+            <div class="desc">規格：一袋(15入立體茶包)</div><div class="price">300元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 抱爆米花 海苔 / 起司 / 焦糖 / 巧克力 / 黑糖 / 脆梅 一罐 230元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">抱爆米花</div>
+            <div class="desc">海苔 / 起司 / 焦糖 / 巧克力 / 黑糖 / 脆梅</div><div class="desc">規格：一罐</div><div class="price">230元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 好chill曲奇餅禮盒 原味 / 巧克力 雙罐 300元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">好Chill曲奇餅禮盒</div>
+            <div class="desc">原味 / 巧克力</div><div class="desc">規格：雙罐</div><div class="price">300元</div><div class="note">限量3000盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 京盛宇療癒茶包盒 12入原葉單包茶包盒 1盒 400元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">京盛宇療癒茶包盒</div>
+            <div class="desc">12入原葉單包茶包盒</div><div class="desc">規格：1盒</div><div class="price">400元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 love you 兔·鳳梨酥禮盒 台灣造型經典鳳梨酥 8入/盒 480元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">Love You 兔·鳳梨酥禮盒</div>
+            <div class="desc">台灣造型經典鳳梨酥</div><div class="desc">規格：8入/盒</div><div class="price">480元</div><div class="note">限量2000盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="綠綠發芽希望工坊 豐興餅舖雷古多 雷古多唱片餅  20入分享包 440元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">綠綠發芽希望工坊</div>
+            <div class="title">豐興餅舖雷古多 雷古多唱片餅</div>
+            <div class="desc">規格：20入分享包</div><div class="price">440元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b6">
+        <h2><span>檸檬大叔</span><small>6 項</small></h2>
+        <div class="grid"><article class="card" data-search="檸檬大叔 100%純檸檬磚 純檸檬 12入/盒 339元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">檸檬大叔</div>
+            <div class="title">100%純檸檬磚</div>
+            <div class="desc">純檸檬</div><div class="desc">規格：12入/盒</div><div class="price">339元</div><div class="note">預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="檸檬大叔 純蜂蜜檸檬風味磚 蜂蜜檸檬 12入/盒 399元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">檸檬大叔</div>
+            <div class="title">純蜂蜜檸檬風味磚</div>
+            <div class="desc">蜂蜜檸檬</div><div class="desc">規格：12入/盒</div><div class="price">399元</div><div class="note">預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="檸檬大叔 海鹽檸檬風味磚 海鹽檸檬 12入/盒 349元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">檸檬大叔</div>
+            <div class="title">海鹽檸檬風味磚</div>
+            <div class="desc">海鹽檸檬</div><div class="desc">規格：12入/盒</div><div class="price">349元</div><div class="note">預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="檸檬大叔 金桔檸檬風味磚 金桔檸檬 12入/盒 379元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">檸檬大叔</div>
+            <div class="title">金桔檸檬風味磚</div>
+            <div class="desc">金桔檸檬</div><div class="desc">規格：12入/盒</div><div class="price">379元</div><div class="note">預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="檸檬大叔 烏梅檸檬風味磚 烏梅檸檬 12入/盒 389元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">檸檬大叔</div>
+            <div class="title">烏梅檸檬風味磚</div>
+            <div class="desc">烏梅檸檬</div><div class="desc">規格：12入/盒</div><div class="price">389元</div><div class="note">預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="檸檬大叔 半乳寡糖檸檬風味磚 半乳寡糖檸檬 12入/盒 399元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">檸檬大叔</div>
+            <div class="title">半乳寡糖檸檬風味磚</div>
+            <div class="desc">半乳寡糖檸檬</div><div class="desc">規格：12入/盒</div><div class="price">399元</div><div class="note">預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b7">
+        <h2><span>十八味草本茶</span><small>1 項</small></h2>
+        <div class="grid"><article class="card" data-search="十八味草本茶 十八味草本茶（無糖）  瓶茶(大960cc/小475cc) / 茶包10入 / 禮盒18入 / 30入 大150/小80/茶包10入330/禮盒560/30入890 元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">十八味草本茶</div>
+            <div class="title">十八味草本茶（無糖）</div>
+            <div class="desc">規格：瓶茶(大960cc/小475cc) / 茶包10入 / 禮盒18入 / 30入</div><div class="price">大150/小80/茶包10入330/禮盒560/30入890 元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b8">
+        <h2><span>冊子</span><small>6 項</small></h2>
+        <div class="grid"><article class="card" data-search="冊子 家傳素粽(全素) 猴頭菇/蓮子/豆皮/栗子/紫米/長糯米/香菇/菜脯 180g/顆 預購80元 / 現場100元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">冊子</div>
+            <div class="title">家傳素粽(全素)</div>
+            <div class="desc">猴頭菇/蓮子/豆皮/栗子/紫米/長糯米/香菇/菜脯</div><div class="desc">規格：180g/顆</div><div class="price">預購80元 / 現場100元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="冊子 冊子素油飯(全素) 紫米/素火腿/香菇絲/薑末/角螺 16兩 預購180元 / 現場200元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">冊子</div>
+            <div class="title">冊子素油飯(全素)</div>
+            <div class="desc">紫米/素火腿/香菇絲/薑末/角螺</div><div class="desc">規格：16兩</div><div class="price">預購180元 / 現場200元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="冊子 藍調月境 紅豆蛋黃酥禮盒3入(蛋奶素) 紅豆蛋黃酥 55g×3顆/盒 預購210元 / 現場240元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">冊子</div>
+            <div class="title">藍調月境 紅豆蛋黃酥禮盒3入(蛋奶素)</div>
+            <div class="desc">紅豆蛋黃酥</div><div class="desc">規格：55g×3顆/盒</div><div class="price">預購210元 / 現場240元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="冊子 藍調月境 白玉明月酥禮盒3入(蛋奶素) 白玉明月酥(綠豆餡) 55g×3顆/盒 預購210元 / 現場240元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">冊子</div>
+            <div class="title">藍調月境 白玉明月酥禮盒3入(蛋奶素)</div>
+            <div class="desc">白玉明月酥(綠豆餡)</div><div class="desc">規格：55g×3顆/盒</div><div class="price">預購210元 / 現場240元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="冊子 noyer·諾葉果藏 3入(蛋奶素) 堅果塔 3入/盒 預購150元 / 現場170元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">冊子</div>
+            <div class="title">Noyer·諾葉果藏 3入(蛋奶素)</div>
+            <div class="desc">堅果塔</div><div class="desc">規格：3入/盒</div><div class="price">預購150元 / 現場170元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="冊子 la pause·金磚四重奏(費南雪) 4入 伯爵火山豆/靜岡抹茶/法式青檸/蜜香榛果 4入/盒 預購150元 / 現場170元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">冊子</div>
+            <div class="title">La Pause·金磚四重奏(費南雪) 4入</div>
+            <div class="desc">伯爵火山豆/靜岡抹茶/法式青檸/蜜香榛果</div><div class="desc">規格：4入/盒</div><div class="price">預購150元 / 現場170元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b9">
+        <h2><span>天昱坊</span><small>9 項</small></h2>
+        <div class="grid"><article class="card" data-search="天昱坊 油飯飯糰 香菇麻油飯  60元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">油飯飯糰</div>
+            <div class="desc">香菇麻油飯</div><div class="price">60元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 海苔飯捲 韓式泡菜 / 檸檬基丁 / 牛蒡絲 / 玉米香鬆 4種口味 100元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">海苔飯捲</div>
+            <div class="desc">韓式泡菜 / 檸檬基丁 / 牛蒡絲 / 玉米香鬆</div><div class="desc">規格：4種口味</div><div class="price">100元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 客家碗粿 菜脯 / 香菇 / 碎豆輪  50元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">客家碗粿</div>
+            <div class="desc">菜脯 / 香菇 / 碎豆輪</div><div class="price">50元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 草仔粿 菜脯米  35元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">草仔粿</div>
+            <div class="desc">菜脯米</div><div class="price">35元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 客家菜包 菜脯 / 香菇  35元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">客家菜包</div>
+            <div class="desc">菜脯 / 香菇</div><div class="price">35元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 芋粿 芋頭塊  35元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">芋粿</div>
+            <div class="desc">芋頭塊</div><div class="price">35元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 蓮藕糕 黑糖雪蓮子/紅豆/綠豆/大豆/芋頭/黑糖 6種  35元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">蓮藕糕</div>
+            <div class="desc">黑糖雪蓮子/紅豆/綠豆/大豆/芋頭/黑糖 6種</div><div class="price">35元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 紫米紅豆 紅豆泥  35元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">紫米紅豆</div>
+            <div class="desc">紅豆泥</div><div class="price">35元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="天昱坊 客家黑糖糕  一片約20×20cm圓形 80元/片">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">天昱坊</div>
+            <div class="title">客家黑糖糕</div>
+            <div class="desc">規格：一片約20×20cm圓形</div><div class="price">80元/片</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b10">
+        <h2><span>植得蔬食</span><small>2 項</small></h2>
+        <div class="grid"><article class="card" data-search="植得蔬食 植得燻ㄚ   150元/塊">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">植得蔬食</div>
+            <div class="title">植得燻ㄚ</div>
+            <div class="price">150元/塊</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="植得蔬食 土托余羹   80元/份">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">植得蔬食</div>
+            <div class="title">土托余羹</div>
+            <div class="price">80元/份</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b11">
+        <h2><span>裕寺蔬食炸物｜潤餅</span><small>8 項</small></h2>
+        <div class="grid"><article class="card" data-search="裕寺蔬食炸物｜潤餅 手工素g排   70元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">手工素G排</div>
+            <div class="price">70元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 素炸魷魚酥   70元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">素炸魷魚酥</div>
+            <div class="price">70元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 塔香鹹酥g   70元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">塔香鹹酥G</div>
+            <div class="price">70元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 手工龍蝦捲   70元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">手工龍蝦捲</div>
+            <div class="price">70元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 蚵仔酥   60元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">蚵仔酥</div>
+            <div class="price">60元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 炸水餃   60元/個">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">炸水餃</div>
+            <div class="price">60元/個</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 綜合炸物   150元/份">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">綜合炸物</div>
+            <div class="price">150元/份</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="裕寺蔬食炸物｜潤餅 潤餅（原味）   70元/份">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">裕寺蔬食炸物｜潤餅</div>
+            <div class="title">潤餅（原味）</div>
+            <div class="price">70元/份</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b12">
+        <h2><span>慢活•森咖啡</span><small>7 項</small></h2>
+        <div class="grid"><article class="card" data-search="慢活•森咖啡 拿鐵咖啡 經典咖啡+植物奶 360ml/袋 150元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">拿鐵咖啡</div>
+            <div class="desc">經典咖啡+植物奶</div><div class="desc">規格：360ml/袋</div><div class="price">150元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="慢活•森咖啡 經典美式咖啡 經典咖啡 360ml/袋 80元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">經典美式咖啡</div>
+            <div class="desc">經典咖啡</div><div class="desc">規格：360ml/袋</div><div class="price">80元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="慢活•森咖啡 秋桂嫣紅 紅茶+水梨+手工桂花釀熬煮 480ml/袋 80元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">秋桂嫣紅</div>
+            <div class="desc">紅茶+水梨+手工桂花釀熬煮</div><div class="desc">規格：480ml/袋</div><div class="price">80元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="慢活•森咖啡 茉莉冰茶（綠茶底） 綠茶+手工茉莉花釀熬煮 480ml/袋 80元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">茉莉冰茶（綠茶底）</div>
+            <div class="desc">綠茶+手工茉莉花釀熬煮</div><div class="desc">規格：480ml/袋</div><div class="price">80元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="慢活•森咖啡 冬瓜桔了（無咖啡因） 有機冬瓜塊+新鮮金桔汁 480ml/袋 80元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">冬瓜桔了（無咖啡因）</div>
+            <div class="desc">有機冬瓜塊+新鮮金桔汁</div><div class="desc">規格：480ml/袋</div><div class="price">80元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="慢活•森咖啡 酸梅湯（無咖啡因） 8種食材熬煮 300ml/袋 70元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">酸梅湯（無咖啡因）</div>
+            <div class="desc">8種食材熬煮</div><div class="desc">規格：300ml/袋</div><div class="price">70元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="慢活•森咖啡 手作古早味花生糖 手工炒糖搭配雲林花生 200g/包 180元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">慢活•森咖啡</div>
+            <div class="title">手作古早味花生糖</div>
+            <div class="desc">手工炒糖搭配雲林花生</div><div class="desc">規格：200g/包</div><div class="price">180元</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section><section id="b13">
+        <h2><span>菓迷方脆腰果</span><small>4 項</small></h2>
+        <div class="grid"><article class="card" data-search="菓迷方脆腰果 經典方脆腰果  100g/包 250元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">菓迷方脆腰果</div>
+            <div class="title">經典方脆腰果</div>
+            <div class="desc">規格：100g/包</div><div class="price">250元</div><div class="note">預購(現場取貨) 4包/組900元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="菓迷方脆腰果 麻辣方脆腰果  100g/包 280元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">菓迷方脆腰果</div>
+            <div class="title">麻辣方脆腰果</div>
+            <div class="desc">規格：100g/包</div><div class="price">280元</div><div class="note">預購(現場取貨) 4包/組1000元 限量100組</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="菓迷方脆腰果 原力腰果（無調味）  100g/包 250元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">菓迷方脆腰果</div>
+            <div class="title">原力腰果（無調味）</div>
+            <div class="desc">規格：100g/包</div><div class="price">250元</div><div class="note">預購(現場取貨) 1盒500元 限量100盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article><article class="card" data-search="菓迷方脆腰果 精裝方脆腰果禮盒  100g×2包/盒 520元">
+            <div class="photo"><div class="ph">照片待補</div></div>
+            <div class="brand-tag">菓迷方脆腰果</div>
+            <div class="title">精裝方脆腰果禮盒</div>
+            <div class="desc">規格：100g×2包/盒</div><div class="price">520元</div><div class="note">預購(現場取貨) 1盒500元 限量100盒</div>
+            
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        </article></div>
+    </section></main>
+<button class="menu-fab" id="menuFab" aria-label="店家選單">☰</button>
+<a class="cart-fab" href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank" aria-label="前往預購表單">🛒</a>
+<aside class="drawer" id="drawer">
+  <div class="head"><span>店家</span><button id="closeDrawer" aria-label="關閉">×</button></div>
+  <nav class="list"><a href="#b0">佛光好事集</a><a href="#b1">每日啡商行</a><a href="#b2">卡帛素食烘焙義式廚房</a><a href="#b3">鬍子國王蛋捲+光頭呂手作抓餅</a><a href="#b4">穎禾甜食</a><a href="#b5">綠綠發芽希望工坊</a><a href="#b6">檸檬大叔</a><a href="#b7">十八味草本茶</a><a href="#b8">冊子</a><a href="#b9">天昱坊</a><a href="#b10">植得蔬食</a><a href="#b11">裕寺蔬食炸物｜潤餅</a><a href="#b12">慢活•森咖啡</a><a href="#b13">菓迷方脆腰果</a></nav>
+</aside>
+<div class="overlay" id="overlay"></div>
+<div class="lightbox" id="lightbox"><button class="lb-close" id="lbClose" aria-label="關閉">×</button><img id="lbImg" alt="放大圖"></div>
+<div class="foot">2026 佛光會世界會員代表大會｜品項預購電子目錄</div>
 <script>
-const DATA={"form_url": "https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform", "brands": [{"name": "佛光好事集", "photos": ["https://i.ibb.co/84tsPnjc/6-48-01.jpg", "https://i.ibb.co/TDDCfrJf/6-48-02.jpg", "https://i.ibb.co/Fq8yfts8/6-48-03.jpg", "https://i.ibb.co/VYkpFsz0/image.png", "https://i.ibb.co/XrVC7Fh6/10-01.jpg", "https://i.ibb.co/v6DrTkL5/10-03.jpg", "https://i.ibb.co/6cD85Vrg/10-012.jpg", "https://i.ibb.co/0VGYnt8G/01.jpg", "https://i.ibb.co/Vpmx1PbP/02.jpg", "https://i.ibb.co/4wYb7H20/V-G.jpg", "https://i.ibb.co/r2SNMqQy/V.jpg", "https://i.ibb.co/5gykTqHw/1kkg.png"], "items": [{"item": "高蛋白豆漿湯杯（本次活動限定款）", "flavor": "鹹熱湯（杯湯）", "spec": "組合式附杯碗＋小麥湯匙、豆漿湯底沖泡25g／特別加入蔬菜（海帶芽、蘑菇、四季豆、紅蘿蔔、玉米）", "price": "當天售價 60元 ｜ 預購價 55元/杯", "limit": "預購 50 杯以上，一杯只要 50元", "note": "10/2、10/3 皆可取貨（僅可接受預購匯款）", "photo": "https://i.ibb.co/0VGYnt8G/01.jpg"}, {"item": "高蛋白豆漿湯底（沖泡）", "flavor": "鹹熱湯（隨身包）", "spec": "10入/盒", "price": "390元/盒", "limit": "", "note": "10/2、10/3 皆可取貨（匯款、現金皆可）", "photo": "https://i.ibb.co/M58bB9y9/10-012.jpg"}, {"item": "豌豆分離蛋白粉", "flavor": "經典原味／五穀黑雪花", "spec": "1KG", "price": "1280元", "limit": "", "note": "10/2、10/3 皆可取貨（僅可接受預購匯款）", "photo": "https://i.ibb.co/5gykTqHw/1kkg.png"}, {"item": "甘糀｜353種營養素 豐富營養", "flavor": "", "spec": "6入/盒（禮盒裝）\n48入（箱）無禮盒 長期保養優惠", "price": "禮盒裝 600元｜整箱 3500元", "limit": "", "note": "10/2、10/3 皆可取貨（僅可接受預購匯款）", "photo": "https://i.ibb.co/84tsPnjc/6-48-01.jpg"}, {"item": "南漂阿北 素排骨酥麵線糊", "flavor": "", "spec": "大碗｜小碗", "price": "大碗 80元｜小碗 60元", "limit": "", "note": "（僅可接受現場現金付款）預購限 10/3 活動當天領取，10/2 不開放取貨", "photo": "https://i.ibb.co/VYkpFsz0/image.png"}, {"item": "給V南洋料理 咖哩G（猴頭菇）", "flavor": "", "spec": "", "price": "120元", "limit": "", "note": "（僅可接受現場現金付款）預購限 10/3 活動當天領取，10/2 不開放取貨", "photo": "https://i.ibb.co/4wYb7H20/V-G.jpg"}, {"item": "給V南洋料理 香料天貝", "flavor": "", "spec": "", "price": "100元", "limit": "", "note": "（僅限預購）預購限 10/3 活動當天領取，現場無販售，10/2 不開放取貨", "photo": "https://i.ibb.co/r2SNMqQy/V.jpg"}], "display_name": "佛光好事集"}, {"name": "每日啡商行", "photos": [], "items": [{"item": "每日銀耳露（微糖）", "flavor": "組合方案：每日銀耳露、每日黑木耳", "spec": "", "price": "70元", "limit": "預購優惠價：\n兩種口味各五瓶共10瓶 = 600元（原價700元）\n每日銀耳露預購10瓶 = 600元（原價700元）\n每日黑木耳露預購10瓶 = 600元（原價700元）", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/LdFQy0Yy/image.png"}, {"item": "每日黑木耳露（無糖）", "flavor": "組合方案：每日銀耳露、每日黑木耳", "spec": "", "price": "70元", "limit": "預購優惠價：\n兩種口味各五瓶共10瓶 = 600元（原價700元）\n每日銀耳露預購10瓶 = 600元（原價700元）\n每日黑木耳露預購10瓶 = 600元（原價700元）", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/JRfs95kw/image.png"}, {"item": "每日薏仁湯（微糖）", "flavor": "一碗溫潤，喝進四種穀豆營養", "spec": "無添加糖／精心熬煮8小時／每罐60元", "price": "60元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/mrFH7v4L/image.png"}], "display_name": "每日啡商行"}, {"name": "卡帛素食烘焙義式廚房", "photos": [], "items": [{"item": "1號餐盒", "flavor": "日式和風壽司／櫻桃雪霜／青青小棠／小火腿起司麵包", "spec": "", "price": "預購價 $126", "limit": "原價 $140", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/XxnRJN09/1.jpg"}, {"item": "2號餐盒", "flavor": "抹茶紅豆毛巾捲／長生果堡／銅鑼燒／日式和風壽司／小火腿起司", "spec": "", "price": "預購價 $275", "limit": "原價 $295", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/wr6YpdjK/2.jpg"}, {"item": "3號餐盒", "flavor": "小火腿起司麵包／麻糬燒／櫻桃雪霜／花漾泡芙／迷你脆皮巧克力", "spec": "", "price": "預購價 $168", "limit": "原價 $188", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/spFvYqw6/3.jpg"}, {"item": "4號餐盒", "flavor": "藍莓鄉村／芝士煙燻／花漾泡芙／小火腿起司麵包／蕾絲朱古力", "spec": "", "price": "預購價 $195", "limit": "原價 $215", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/Gg6vcfN/4.jpg"}, {"item": "托斯卡尼蛋糕（4寸）", "flavor": "（奶素）", "spec": "", "price": "預購價 $150", "limit": "原價 $168", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/RkVwybCt/6-4.jpg"}, {"item": "托斯卡尼蛋糕（6寸）", "flavor": "（奶素）", "spec": "", "price": "預購價 $260", "limit": "原價 $288", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/RkVwybCt/6-4.jpg"}, {"item": "脆皮巧克力卷", "flavor": "（奶素）原味／香草 兩種口味", "spec": "", "price": "預購價 $90", "limit": "原價 $100", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/23VSbdt1/image.jpg"}, {"item": "香草脆皮巧克力", "flavor": "（奶素）", "spec": "", "price": "預購價 $90", "limit": "原價 $100", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/23VSbdt1/image.jpg"}, {"item": "人氣小火腿起司麵包", "flavor": "（奶素）2入/包", "spec": "", "price": "$50", "limit": "", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/hRmsrPt1/image.jpg"}, {"item": "鹹蛋糕（原味玉米香鬆）", "flavor": "（奶素）", "spec": "", "price": "預購價 $190", "limit": "原價 $220", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/LdyXNCWz/image.png"}, {"item": "鹹蛋糕（港式橄欖菜乾酪）", "flavor": "（奶素）", "spec": "", "price": "預購價 $235", "limit": "", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/Wp4zXrZK/2.jpg"}, {"item": "鴛鴦餅", "flavor": "（奶素）6入/盒", "spec": "", "price": "$520", "limit": "", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/wZmrB6R7/6.jpg"}, {"item": "乳酪手捲", "flavor": "（奶素）原味／抹茶紅豆／芋泥／芝麻／巧克力／咖啡 6入/袋", "spec": "", "price": "$350", "limit": "", "note": "預購付款方式：當天付款／僅接受預購匯款", "photo": "https://i.ibb.co/wZmrB6R7/6.jpg"}], "display_name": "卡帛素食烘焙義式廚房"}, {"name": "鬍子國王+光頭呂", "photos": [], "items": [{"item": "鬍子國王手工蛋捲（開心果奶酥）", "flavor": "", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/6cxrvbgs/image.jpg"}, {"item": "鬍子國王手工蛋捲（濃醇奶酥）", "flavor": "", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/ymvdzzL3/image.jpg"}, {"item": "鬍子國王手工蛋捲（北海道純生乳奶酥）", "flavor": "人氣王", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/39bQZM3g/image.jpg"}, {"item": "鬍子國王手工蛋捲（巧克力奶酥）", "flavor": "新品上市", "spec": "1罐", "price": "$380", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/8gQqLY8d/image.jpg"}, {"item": "鬍子國王手工蛋捲（石磨黑芝麻）", "flavor": "黑芝麻餡", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/d4mcnGCt/image.jpg"}, {"item": "鬍子國王手工蛋捲（濃花生）", "flavor": "黑金剛花生", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/ZzZspt7h/image.jpg"}, {"item": "光頭呂 職人手作抓餅（海苔）", "flavor": "", "spec": "1袋", "price": "$350", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/27sxSCNx/image.jpg"}, {"item": "光頭呂 職人手作抓餅（香椿）", "flavor": "", "spec": "1袋", "price": "$350", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/YBT3F5qd/image.jpg"}, {"item": "光頭呂 起司膨膨（餡餅）", "flavor": "起司", "spec": "1個", "price": "$60", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/PscBxBJq/image.jpg"}, {"item": "光頭呂 品牌保冰袋", "flavor": "", "spec": "1袋", "price": "$100", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/SZTwyw6/image.jpg"}, {"item": "鬍子國王手工蛋捲（宇治抹茶奶酥）", "flavor": "", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/CsThYx41/image.jpg"}, {"item": "鬍子國王手工蛋捲（濃郁奶酥）", "flavor": "", "spec": "1罐", "price": "$350", "limit": "預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/C5pYs49t/image.jpg"}, {"item": "光頭呂 職人手作抓餅", "flavor": "", "spec": "", "price": "", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/x8Ff0Ldb/image.jpg"}], "display_name": "鬍子國王蛋捲+光頭呂手作抓餅"}, {"name": "穎禾甜食", "photos": [], "items": [{"item": "青檸糖霜腰果磅蛋糕", "flavor": "", "spec": "", "price": "100元/盒", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）"}, {"item": "無花果法芙娜可可磅蛋糕", "flavor": "", "spec": "", "price": "100元/盒", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）"}, {"item": "有機玫瑰蔓越莓磅蛋糕", "flavor": "", "spec": "", "price": "100元/盒", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/GQjHsD3J/3.jpg"}, {"item": "香蕉核桃磅蛋糕", "flavor": "", "spec": "", "price": "100元/盒", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/Fbnfr0Xn/5.jpg"}, {"item": "香烤杏仁可可脆片", "flavor": "", "spec": "（袋）", "price": "100元/袋", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/bgPzNK5j/1.jpg"}, {"item": "德式雪球餅乾", "flavor": "椰子 / 紫心地瓜 / 黑芝麻", "spec": "（袋）", "price": "100元/袋", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/Pv4f8V3Y/image.jpg"}, {"item": "純素司康", "flavor": "黑糖桂圓荔枝 / 百香果文山青茶 / 火龍果四莓果", "spec": "3顆一袋", "price": "200元/袋", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）"}], "display_name": "穎禾甜食"}, {"name": "綠綠發芽希望工坊", "photos": [], "items": [{"item": "好丘貝果", "flavor": "原味小麥 / 四季春 / 野生桑葚 / 花生可可 / 桂花紫薯 / 瑪格麗特", "spec": "一串六入", "price": "450元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/QzgMgtX/Chat-GPT-Image-2026-8-23-03-15-45.png"}, {"item": "七見櫻堂甜點", "flavor": "鹽之花費南雪 / 香草瑪德蓮 / 伯爵達克瓦茲", "spec": "一袋三入", "price": "200元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/SwGBDRrM/image.png"}, {"item": "幸福千千歲黑豆茶包", "flavor": "", "spec": "一袋(15入立體茶包)", "price": "300元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/0pDcWFFX/image.png"}, {"item": "抱爆米花", "flavor": "海苔 / 起司 / 焦糖 / 巧克力 / 黑糖 / 脆梅", "spec": "一罐", "price": "230元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/G4BB7vfv/image.jpg"}, {"item": "好Chill曲奇餅禮盒", "flavor": "原味 / 巧克力", "spec": "雙罐", "price": "300元", "limit": "限量3000盒", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/zT9HTZzt/Chill.png"}, {"item": "京盛宇療癒茶包盒", "flavor": "12入原葉單包茶包盒", "spec": "1盒", "price": "400元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/hJCDVH6K/image.png"}, {"item": "Love You 兔·鳳梨酥禮盒", "flavor": "台灣造型經典鳳梨酥", "spec": "8入/盒", "price": "480元", "limit": "限量2000盒", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/b5hb6Vm8/Chat-GPT-Image-2026-9-8-10-04-01.png"}, {"item": "豐興餅舖雷古多 雷古多唱片餅", "flavor": "", "spec": "20入分享包", "price": "440元", "limit": "", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/qqhLYYL/LINE-ALBUM-260825-2.jpg"}], "display_name": "綠綠發芽希望工坊"}, {"name": "檸檬大叔", "photos": [], "items": [{"item": "100%純檸檬磚", "flavor": "純檸檬", "spec": "12入/盒", "price": "339元", "limit": "預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/BKwWFHst/20210924-1851.jpg"}, {"item": "純蜂蜜檸檬風味磚", "flavor": "蜂蜜檸檬", "spec": "12入/盒", "price": "399元", "limit": "預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/39v9QFLw/20210924-1854.jpg"}, {"item": "海鹽檸檬風味磚", "flavor": "海鹽檸檬", "spec": "12入/盒", "price": "349元", "limit": "預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/B2HH3bbt/unnamed-3.jpg"}, {"item": "金桔檸檬風味磚", "flavor": "金桔檸檬", "spec": "12入/盒", "price": "379元", "limit": "預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/WpfZG46q/unnamed-4.jpg"}, {"item": "烏梅檸檬風味磚", "flavor": "烏梅檸檬", "spec": "12入/盒", "price": "389元", "limit": "預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/S9BSw7y/image.png"}, {"item": "半乳寡糖檸檬風味磚", "flavor": "半乳寡糖檸檬", "spec": "12入/盒", "price": "399元", "limit": "預購任選三盒1050元 限量100組 / 任選六盒2100元 限量100組", "note": "僅接受預購匯款", "photo": "https://i.ibb.co/F4RfrPT0/image.png"}], "display_name": "檸檬大叔"}, {"name": "十八味草本茶", "photos": [], "items": [{"item": "十八味草本茶（無糖）", "flavor": "瓶茶", "spec": "大瓶 960cc", "price": "150元", "limit": "", "note": "預購付款方式：當天付款／預購匯款（皆可）", "photo": "https://i.ibb.co/ccWbw34j/03.png"}, {"item": "十八味草本茶（無糖）", "flavor": "瓶茶", "spec": "小瓶 475cc", "price": "80元", "limit": "", "note": "預購付款方式：當天付款／預購匯款（皆可）", "photo": "https://i.ibb.co/0p5LM4qf/01.png"}, {"item": "十八味草本茶（無糖）", "flavor": "茶包", "spec": "10入", "price": "330元", "limit": "", "note": "預購付款方式：當天付款／預購匯款（皆可）", "photo": "https://i.ibb.co/s9p7YcGv/02.png"}, {"item": "十八味草本茶（無糖）", "flavor": "禮盒", "spec": "18入/禮盒", "price": "560元", "limit": "", "note": "預購付款方式：當天付款／預購匯款（皆可）", "photo": "https://i.ibb.co/Fqgzn7zv/04.png"}, {"item": "十八味草本茶（無糖）", "flavor": "茶包", "spec": "30入", "price": "890元", "limit": "", "note": "預購付款方式：當天付款／預購匯款（皆可）", "photo": "https://i.ibb.co/XfZcSj6M/05.png"}], "display_name": "十八味草本茶"}, {"name": "冊子生活購", "photos": [], "items": [{"item": "家傳素粽(全素)", "flavor": "猴頭菇/蓮子/豆皮/栗子/紫米/長糯米/香菇/菜脯", "spec": "180g/顆", "price": "預購80元 / 現場100元", "limit": "", "note": "預購付款方式：當天付款", "photo": "https://i.ibb.co/mg2ftVY/IMG-9313.jpg"}, {"item": "冊子素油飯(全素)", "flavor": "紫米/素火腿/香菇絲/薑末/角螺", "spec": "16兩", "price": "預購180元 / 現場200元", "limit": "", "note": "預購付款方式：當天付款", "photo": "https://i.ibb.co/Jjqj2TT9/IMG-9314.jpg"}, {"item": "藍調月境 紅豆蛋黃酥禮盒3入(蛋奶素)", "flavor": "紅豆蛋黃酥", "spec": "55g×3顆/盒", "price": "預購210元 / 現場240元", "limit": "", "note": "預購付款方式：當天付款", "photo": "https://i.ibb.co/PZKPmGKd/image.jpg"}, {"item": "藍調月境 白玉明月酥禮盒3入(蛋奶素)", "flavor": "白玉明月酥(綠豆餡)", "spec": "55g×3顆/盒", "price": "預購210元 / 現場240元", "limit": "", "note": "預購付款方式：當天付款", "photo": "https://i.ibb.co/Z6GyHhPD/image.jpg"}, {"item": "Noyer·諾葉果藏 3入(蛋奶素)", "flavor": "堅果塔", "spec": "3入/盒", "price": "預購150元 / 現場170元", "limit": "", "note": "預購付款方式：當天付款", "photo": "https://i.ibb.co/KcWNsMWQ/D94-CF87-E-C6-DE-49-BB-BA01-58118476-F52-B.png"}, {"item": "La Pause·金磚四重奏(費南雪) 4入", "flavor": "伯爵火山豆/靜岡抹茶/法式青檸/蜜香榛果", "spec": "4入/盒", "price": "預購150元 / 現場170元", "limit": "", "note": "預購付款方式：當天付款", "photo": "https://i.ibb.co/zh4TzQbD/FFA3-DC90-F94-C-492-D-8755-2304944-D2316.png"}], "display_name": "冊子"}, {"name": "天昱坊", "photos": [], "items": [{"item": "油飯飯糰", "flavor": "香菇麻油飯", "spec": "", "price": "60元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/Mk04sbzS/1.jpg"}, {"item": "海苔飯捲", "flavor": "韓式泡菜 / 檸檬基丁 / 牛蒡絲 / 玉米香鬆", "spec": "4種口味", "price": "100元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/jZfF3g1P/2.jpg"}, {"item": "客家碗粿", "flavor": "菜脯 / 香菇 / 碎豆輪", "spec": "", "price": "50元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/qYp0BbVR/3.jpg"}, {"item": "草仔粿", "flavor": "菜脯米", "spec": "", "price": "35元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/prJ6LmxV/4.jpg"}, {"item": "客家菜包", "flavor": "菜脯 / 香菇", "spec": "", "price": "35元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/tMgF0Djz/5.jpg"}, {"item": "芋粿", "flavor": "芋頭塊", "spec": "", "price": "35元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/whGMxZMq/6.jpg"}, {"item": "蓮藕糕", "flavor": "黑糖雪蓮子/紅豆/綠豆/大豆/芋頭/黑糖 6種", "spec": "", "price": "35元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/rGrNvj9P/7.jpg"}, {"item": "紫米紅豆", "flavor": "紅豆泥", "spec": "", "price": "35元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/4ZdCdJ01/8.jpg"}, {"item": "客家黑糖糕", "flavor": "", "spec": "一片約20×20cm圓形", "price": "80元/片", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/v4twTCFH/293222.jpg"}], "display_name": "天昱坊"}, {"name": "植得蔬食", "photos": [], "items": [{"item": "植得燻ㄚ", "flavor": "", "spec": "", "price": "150元/塊", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/8LnzwBLD/unnamed-3.jpg"}, {"item": "土托余羹", "flavor": "", "spec": "", "price": "80元/份", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/jZgH5Xqz/unnamed-12.jpg"}], "display_name": "植得蔬食"}, {"name": "裕寺｜炸物、潤餅", "photos": [], "items": [{"item": "手工素G排", "flavor": "", "spec": "", "price": "70元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/8gcQ7jcK/S-38289478-0.jpg"}, {"item": "素炸魷魚酥", "flavor": "", "spec": "", "price": "70元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/xqX1PdPJ/S-38289479-0.jpg"}, {"item": "塔香鹹酥G", "flavor": "", "spec": "", "price": "70元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/0jGDvd4q/S-38289482-0.jpg"}, {"item": "手工龍蝦捲", "flavor": "", "spec": "", "price": "70元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/3mbY8x4G/S-38289480-0.jpg"}, {"item": "蚵仔酥", "flavor": "", "spec": "", "price": "60元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/0jGDvd4q/S-38289482-0.jpg"}, {"item": "炸水餃", "flavor": "", "spec": "", "price": "60元/個", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/0jGDvd4q/S-38289482-0.jpg"}, {"item": "綜合炸物", "flavor": "", "spec": "", "price": "150元/份", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/ycwFJyqd/S-38289481-0.jpg"}, {"item": "潤餅（原味）", "flavor": "", "spec": "", "price": "70元/份", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/0jGDvd4q/S-38289482-0.jpg"}], "display_name": "裕寺蔬食炸物｜潤餅"}, {"name": "慢活•森咖啡", "photos": [], "items": [{"item": "拿鐵咖啡", "flavor": "經典咖啡+植物奶", "spec": "360ml/袋", "price": "150元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/VfMJR32/293281-0.jpg"}, {"item": "經典美式咖啡", "flavor": "經典咖啡", "spec": "360ml/袋", "price": "80元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/Myx7Vqvx/293282-0.jpg"}, {"item": "秋桂嫣紅", "flavor": "紅茶+水梨+手工桂花釀熬煮", "spec": "480ml/袋", "price": "80元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/pj9dGs4Y/293283-0.jpg"}, {"item": "茉莉冰茶（綠茶底）", "flavor": "綠茶+手工茉莉花釀熬煮", "spec": "480ml/袋", "price": "80元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/20zFCGLX/293284-0.jpg"}, {"item": "冬瓜桔了（無咖啡因）", "flavor": "有機冬瓜塊+新鮮金桔汁", "spec": "480ml/袋", "price": "80元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/qFhWk4N5/293278-0.jpg"}, {"item": "酸梅湯（無咖啡因）", "flavor": "8種食材熬煮", "spec": "300ml/袋", "price": "70元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/b58GJNWz/293279-0.jpg"}, {"item": "手作古早味花生糖", "flavor": "手工炒糖搭配雲林花生", "spec": "200g/包", "price": "180元", "limit": "", "note": "預購付款方式：當天付款／提前匯款（兩者皆可）", "photo": "https://i.ibb.co/rfLWfrZL/293280-0.jpg"}], "display_name": "慢活•森咖啡"}, {"name": "菓迷方脆腰果", "photos": [], "items": [{"item": "經典方脆腰果", "flavor": "", "spec": "100g/包", "price": "250元", "limit": "預購(現場取貨) 4包/組900元 限量100組", "note": "預購匯款（優先）／當天付款（請提供訂購人姓名）", "photo": "https://i.ibb.co/39v09RgJ/MP004.jpg"}, {"item": "麻辣方脆腰果", "flavor": "", "spec": "100g/包", "price": "280元", "limit": "預購(現場取貨) 4包/組1000元 限量100組", "note": "預購匯款（優先）／當天付款（請提供訂購人姓名）", "photo": "https://i.ibb.co/wZGcJ6WC/MP05.jpg"}, {"item": "原力腰果（無調味）", "flavor": "", "spec": "100g/包", "price": "250元", "limit": "預購(現場取貨) 1盒500元 限量100盒", "note": "預購匯款（優先）／當天付款（請提供訂購人姓名）", "photo": "https://i.ibb.co/xSgZZzGF/MP444.jpg"}, {"item": "精裝方脆腰果禮盒", "flavor": "", "spec": "100g×2包/盒", "price": "520元", "limit": "預購(現場取貨) 1盒500元 限量100盒", "note": "預購匯款（優先）／當天付款（請提供訂購人姓名）", "photo": "https://i.ibb.co/XTNzmHR/E.png"}], "display_name": "菓迷方脆腰果"}]};
-(function(){
-var app=document.getElementById('app');
-var chips=document.getElementById('chips');
-var q=document.getElementById('q');
-function brandLabel(b){return b.display_name||b.name;}
-DATA.brands.forEach(function(b,i){
-  var a=document.createElement('a');
-  a.href='#b'+i;
-  a.textContent=brandLabel(b);
-  a.onclick=function(){
-    chips.querySelectorAll('a').forEach(function(x){x.style.background='';x.style.color='';});
-    a.style.background='#166534';a.style.color='#fff';
-  };
-  chips.appendChild(a);
-});
-DATA.brands.forEach(function(b,i){
-  var sec=document.createElement('section');
-  sec.id='b'+i;
-  var h=document.createElement('h2');
-  var span=document.createElement('span');
-  span.textContent=brandLabel(b);
-  var small=document.createElement('small');
-  small.textContent=b.items.length+' 項';
-  span.appendChild(document.createTextNode(' '));
-  span.appendChild(small);
-  h.appendChild(span);
-  var btn=document.createElement('a');
-  btn.className='btn form';
-  btn.href=DATA.form_url;
-  btn.target='_blank';
-  btn.textContent='前往預購表單';
-  btn.style.padding='7px 12px';
-  btn.style.fontSize='12px';
-  h.appendChild(btn);
-  sec.appendChild(h);
-  var grid=document.createElement('div');
-  grid.className='grid';
-  b.items.forEach(function(it){
-    var c=document.createElement('article');
-    c.className='card';
-    var bl=brandLabel(b);
-    var search=(bl+' '+(it.item||'')+' '+(it.flavor||'')+' '+(it.spec||'')+' '+(it.price||'')).toLowerCase();
-    c.setAttribute('data-search',search);
-    var photo=document.createElement('div');
-    photo.className='photo';
-    if(it.photo){
-      var img=document.createElement('img');
-      img.src=it.photo;
-      img.alt=(it.item||'');
-      img.style.height='auto';
-      img.style.width='100%';
-      img.style.maxHeight='230px';
-      img.style.objectFit='contain';
-      img.style.display='block';
-      photo.appendChild(img);
-    } else {
-      var ph=document.createElement('div');
-      ph.className='ph';
-      ph.textContent='照片待補';
-      photo.appendChild(ph);
-    }
-    c.appendChild(photo);
-    var tag=document.createElement('div');
-    tag.className='brand-tag';
-    tag.textContent=bl;
-    c.appendChild(tag);
-    var t=document.createElement('div');
-    t.className='title';
-    t.textContent=(it.item||'');
-    c.appendChild(t);
-    if(it.flavor){var d=document.createElement('div');d.className='desc';d.textContent=it.flavor;c.appendChild(d);}
-    if(it.spec){var s=document.createElement('div');s.className='desc';s.textContent='規格：'+it.spec;c.appendChild(s);}
-    if(it.price){var p=document.createElement('div');p.className='price';p.textContent=it.price;c.appendChild(p);}
-    if(it.limit||it.note){var n=document.createElement('div');n.className='note';n.textContent=[it.limit,it.note].filter(function(x){return x&&x.trim()}).join('／');c.appendChild(n);}
-    var ft=document.createElement('div');
-    ft.className='footer';
-    var fa=document.createElement('a');
-    fa.href=DATA.form_url;
-    fa.target='_blank';
-    fa.textContent='前往預購表單';
-    ft.appendChild(fa);
-    c.appendChild(ft);
-    grid.appendChild(c);
+function $(s){return document.querySelector(s)}
+function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s))}
+// chips 選中狀態
+$$("#chips a").forEach(function(a){
+  a.addEventListener("click",function(){
+    $$("#chips a").forEach(function(x){x.classList.remove("on");});
+    a.classList.add("on");
+    if(a.getAttribute("href")==="#top"){window.scrollTo(0,0);}
   });
-  sec.appendChild(grid);
-  app.appendChild(sec);
 });
-q.addEventListener('input',function(){
+// 搜尋
+var q=$("#q");
+q.addEventListener("input",function(){
   var v=q.value.trim().toLowerCase();
-  document.querySelectorAll('section').forEach(function(sec){
-    var any=false;
-    sec.querySelectorAll('.card').forEach(function(card){
-      var ok=!v||card.getAttribute('data-search').indexOf(v)>=0;
-      card.style.display=ok?'':'none';
-      if(ok)any=true;
-    });
-    sec.style.display=any?'':'none';
+  $$("#app .card").forEach(function(card){
+    var ok=!v||card.getAttribute("data-search").indexOf(v)>=0;
+    card.style.display=ok?"":"none";
+  });
+  $$("#app section").forEach(function(sec){
+    var any=Array.prototype.some.call(sec.querySelectorAll(".card"),function(c){return c.style.display!=="none";});
+    sec.style.display=any?"":"none";
   });
 });
-})();
+// drawer
+var drawer=$("#drawer"),overlay=$("#overlay");
+function closeDrawer(){drawer.classList.remove("open");overlay.classList.remove("show");}
+$("#menuFab").addEventListener("click",function(){drawer.classList.add("open");overlay.classList.add("show");});
+$("#closeDrawer").addEventListener("click",closeDrawer);
+overlay.addEventListener("click",closeDrawer);
+$$(".drawer .list a").forEach(function(a){
+  a.addEventListener("click",function(e){
+    e.preventDefault();closeDrawer();
+    $$("#chips a").forEach(function(x){x.classList.remove("on");});
+    var t=a.getAttribute("href");
+    if(t==="#top"){window.scrollTo(0,0);return;}
+    var sec=document.querySelector(t);
+    if(sec)sec.scrollIntoView();
+  });
+});
+// lightbox
+var lb=$("#lightbox"),lbImg=$("#lbImg");
+document.addEventListener("click",function(e){
+  var z=e.target.closest(".zoom");
+  if(z){e.preventDefault();lbImg.src=z.getAttribute("data-full");lb.classList.add("show");}
+});
+$("#lbClose").addEventListener("click",function(){lb.classList.remove("show");});
+lb.addEventListener("click",function(e){if(e.target===lb)lb.classList.remove("show");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("show");closeDrawer();}});
 </script>
-</body>
-</html>
+</body></html>
