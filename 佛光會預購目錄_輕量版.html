@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 佛光會世界會員代表大會 — 品項預購目錄</title>
+<style>
+:root{--brand:#1a5c3a;--brand-light:#e8f5ee;--brand-dark:#0e3d24;--accent:#c8951a;--card:#fff;--bg:#f6f4ef;--text:#222;--muted:#666;--radius:14px;--shadow:0 2px 12px rgba(0,0,0,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:linear-gradient(135deg,var(--brand-dark),var(--brand));color:#fff;padding:28px 20px 22px;text-align:center}
+header h1{font-size:22px;font-weight:700;letter-spacing:1px}
+header p{font-size:13px;opacity:.85;margin-top:4px}
+header .order-link{display:inline-block;margin-top:14px;background:var(--accent);color:#fff;padding:10px 22px;border-radius:50px;text-decoration:none;font-weight:700;font-size:14px;box-shadow:0 3px 10px rgba(200,149,26,.4)}
+.search-bar{position:sticky;top:0;background:var(--bg);z-index:100;padding:12px 16px}
+.search-bar input{width:100%;padding:11px 16px;border:2px solid var(--brand-light);border-radius:50px;font-size:14px;outline:none;background:#fff;box-shadow:var(--shadow)}
+.search-bar input:focus{border-color:var(--brand)}
+.brand-nav{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;background:#fff;border-bottom:1px solid #eee;position:sticky;top:54px;z-index:99;-webkit-overflow-scrolling:touch}
+.brand-nav a{flex-shrink:0;padding:7px 14px;border-radius:50px;font-size:13px;text-decoration:none;color:var(--muted);background:#f0efe9;white-space:nowrap;border:1px solid transparent}
+.brand-nav a.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+.brand-section{margin-top:28px}
+.brand-title{display:flex;align-items:center;gap:12px;margin-bottom:14px;padding-bottom:10px;border-bottom:3px solid var(--brand)}
+.brand-title .num{background:var(--brand);color:#fff;font-size:13px;font-weight:700;min-width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.brand-title h2{font-size:20px;font-weight:700;color:var(--brand-dark)}
+.brand-title .badge{font-size:11px;background:var(--brand-light);color:var(--brand);padding:3px 10px;border-radius:50px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+@media(min-width:768px){.card-grid{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card.hidden{display:none}
+.card-img-wrap{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#f0efe9}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform .3s}
+.card-img-wrap img:hover{transform:scale(1.04)}
+.card-img-wrap .placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8f5ee,#d4e8dc);color:var(--brand);font-size:13px;font-weight:600;text-align:center;padding:20px}
+.card-img-wrap .photo-badge{position:absolute;top:8px;left:8px;background:rgba(26,92,58,.85);color:#fff;font-size:10px;padding:2px 8px;border-radius:20px}
+.card-body{padding:12px 14px 14px;flex:1;display:flex;flex-direction:column}
+.card-brand{font-size:11px;color:var(--accent);font-weight:700;margin-bottom:3px}
+.card-product{font-size:15px;font-weight:700;margin-bottom:4px}
+.card-flavor{font-size:12px;color:var(--muted);margin-bottom:6px}
+.card-spec{font-size:12px;color:var(--muted);margin-bottom:8px}
+.card-spec b{color:var(--text);font-weight:600}
+.card-price{font-size:20px;font-weight:800;color:var(--brand-dark);margin-bottom:4px}
+.card-price small{font-size:12px;font-weight:400;color:var(--muted)}
+.card-pre{font-size:11px;color:var(--muted);background:#f5f5f0;padding:6px 8px;border-radius:8px;margin-bottom:8px}
+.card-notes{font-size:11px;color:#8a6d1a;background:#fff8e6;padding:6px 8px;border-radius:8px;margin-bottom:10px}
+.card-cta{margin-top:auto}
+.card-cta a{display:block;text-align:center;background:var(--brand);color:#fff;padding:10px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;transition:background .2s}
+.card-cta a:hover{background:var(--brand-dark)}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:999;align-items:center;justify-content:center;flex-direction:column;gap:12px}
+.lightbox.show{display:flex}
+.lightbox img{max-width:95vw;max-height:85vh;object-fit:contain;border-radius:8px}
+.lightbox .lb-close{position:absolute;top:20px;right:24px;color:#fff;font-size:28px;cursor:pointer}
+.lightbox .lb-caption{color:#fff;font-size:13px;text-align:center}
+footer{text-align:center;padding:20px;font-size:12px;color:var(--muted)}
+.no-result{display:none;text-align:center;padding:60px 20px;color:var(--muted);font-size:16px}
+.no-result.show{display:block}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<header>
+  <h1>2026 佛光會世界會員代表大會</h1>
+  <p>品項預購電子目錄 ｜ 14家廠商・100項商品</p>
+  <a class="order-link" href="ORDER_LINK" target="_blank">🛒 前往下單（Google表單）</a>
+</header>
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="搜尋廠商或商品名稱…" oninput="doSearch(this.value)">
+</div>
+<div class="brand-nav" id="brandNav"></div>
+<main>
+  <div id="content"></div>
+  <div class="no-result" id="noResult">找不到相關商品</div>
+</main>
+<div class="lightbox" id="lightbox" onclick="closeLB(event)">
+  <span class="lb-close">&times;</span>
+  <img id="lbImg" src="">
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+<footer>© 2026 佛光會預購系統 ｜ 下單請使用上方 Google 表單連結</footer>
+<script>
+const ITEMS = [{"brand": "菓迷方脆腰果", "product": "菓迷方脆腰果", "flavor": "經典方脆腰果", "spec": "100g/包", "price": "250.0", "pre102": "預購(現場取貨) 4包/組900元 限量100組", "pre103": "預購(現場取貨) 4包/組900元 限量100組", "notes": "*2022-2026連續五年\nITI國際風味獎三星認證\n*台中百大伴手禮\n*日本Vegan純素食認證\n*通過ISO、HACCP認證", "images": []}, {"brand": "菓迷方脆腰果", "product": "", "flavor": "麻辣方脆腰果", "spec": "100g/包", "price": "280.0", "pre102": "預購(現場取貨) 4包/組1000元 限量100組", "pre103": "預購(現場取貨) 4包/組1000元 限量100組", "notes": "", "images": []}, {"brand": "菓迷方脆腰果", "product": "", "flavor": "原力腰果(無調味)", "spec": "100g/包", "price": "250.0", "pre102": "預購(現場取貨)  1盒 500元 限量100盒", "pre103": "預購(現場取貨) 4包/組900元 限量100組", "notes": "", "images": []}, {"brand": "菓迷方脆腰果", "product": "", "flavor": "精裝方脆腰果禮盒", "spec": "100g*2包/盒", "price": "520.0", "pre102": "預購(現場取貨)  1盒 500元 限量100盒", "pre103": "預購(現場取貨)  1盒 500元 限量100盒", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "好丘貝果", "flavor": "原味小麥、四季春、野生桑葚、花生可可、桂花紫薯、瑪格麗特", "spec": "一串六入", "price": "450.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "七見櫻堂甜點", "flavor": "鹽之花費南雪、香草瑪德蓮、伯爵達克瓦茲", "spec": "一袋三入", "price": "200.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "幸福千千歲黑豆茶包", "flavor": "", "spec": "一袋(15入立體茶包)", "price": "300.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "抱爆米花", "flavor": "海苔、起司、焦糖、巧克力、黑糖、脆梅", "spec": "一罐", "price": "230.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "好Chill曲奇餅禮盒", "flavor": "原味、巧克力", "spec": "雙罐", "price": "300.0", "pre102": "限量3000盒", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "京盛宇療癒茶包盒", "flavor": "12入原葉單包茶包盒（阿里山金萱、鐵觀音、紅玉紅茶、輕焙四季春、不知春、蜜香貴妃）", "spec": "1盒", "price": "400.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "Love You 兔·鳳梨酥禮盒", "flavor": "台灣造型經典鳳梨酥", "spec": "8入/盒", "price": "480.0", "pre102": "限量2000盒", "pre103": "", "notes": "", "images": []}, {"brand": "綠綠發芽希望工坊", "product": "豐興餅舖雷古多", "flavor": "雷古多唱片餅", "spec": "20入分享包", "price": "440.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "檸檬大叔", "product": "檸檬大叔100%純檸檬磚", "flavor": "純檸檬", "spec": "12入/盒", "price": "339.0", "pre102": "預購任選三盒 1050元 限量100組", "pre103": "預購任選六盒 2100元 限量100組", "notes": "A.A. TASTE AWARDS 風味賞三星最高評鑑\nA.A. Clean Label 100% 無添加認證\n屏東大大伴手禮\n金點設計獎\n*預購者請先告知風味，以便備貨*\n*預購者請先告知風味，以便備貨*\n*預購者請先告知風味，以便備貨*", "images": []}, {"brand": "檸檬大叔", "product": "檸檬大叔純蜂蜜檸檬風味磚", "flavor": "蜂蜜檸檬", "spec": "12入/盒", "price": "399.0", "pre102": "預購任選三盒 1050元 限量100組", "pre103": "預購任選六盒 2100元 限量100組", "notes": "", "images": []}, {"brand": "檸檬大叔", "product": "檸檬大叔海鹽檸檬風味磚", "flavor": "海鹽檸檬", "spec": "12入/盒", "price": "349.0", "pre102": "預購任選三盒 1050元 限量100組", "pre103": "預購任選六盒 2100元 限量100組", "notes": "", "images": []}, {"brand": "檸檬大叔", "product": "檸檬大叔金桔檸檬風味磚", "flavor": "金桔檸檬", "spec": "12入/盒", "price": "379.0", "pre102": "預購任選三盒 1050元 限量100組", "pre103": "預購任選六盒 2100元 限量100組", "notes": "", "images": []}, {"brand": "檸檬大叔", "product": "檸檬大叔烏梅檸檬風味磚", "flavor": "烏梅檸檬", "spec": "12入/盒", "price": "389.0", "pre102": "預購任選三盒 1050元 限量100組", "pre103": "預購任選六盒 2100元 限量100組", "notes": "", "images": []}, {"brand": "檸檬大叔", "product": "檸檬大叔半乳寡糖檸檬風味磚", "flavor": "半乳寡糖檸檬", "spec": "12入/盒", "price": "399.0", "pre102": "預購任選三盒 1050元 限量100組", "pre103": "預購任選六盒 2100元 限量100組", "notes": "", "images": []}, {"brand": "十八味草本茶", "product": "十八味草本茶", "flavor": "十八味草本茶（無糖）", "spec": "瓶茶（大瓶960cc） \n瓶茶（小瓶475cc)\n茶包 10入 （18入 禮盒 ）30入", "price": "瓶茶（大150元） （小80元）\n茶包10入330元  \n18入（禮盒）560元\n30入 890元", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "冊子生活購", "product": "家傳素粽(全素)", "flavor": "嚴選猴頭菇、蓮子、豆皮、栗子、紫米、長糯米、香菇、菜脯等當季最新鮮食材。", "spec": "180g/顆", "price": "預購價80\n現場價100", "pre102": "", "pre103": "", "notes": "現場組合價\n素粽+藍調月境 320", "images": []}, {"brand": "冊子生活購", "product": "冊子素油飯(全素)", "flavor": "嚴選紫米、素火腿、香菇絲、薑末、角螺。", "spec": "16兩", "price": "預購價180\n現場價200", "pre102": "", "pre103": "", "notes": "現場組合價\n素油飯+藍調月境 420", "images": []}, {"brand": "冊子生活購", "product": "藍調月境 紅豆蛋黃酥禮盒3入 (蛋奶素)", "flavor": "紅豆蛋黃酥", "spec": "55gx3顆/盒", "price": "預購價210\n現場價240", "pre102": "", "pre103": "", "notes": "現場組合價\n任3盒600", "images": []}, {"brand": "冊子生活購", "product": "藍調月境 白玉明月酥禮盒3入 (蛋奶素)", "flavor": "白玉明月酥(綠豆餡)", "spec": "55gx3顆/盒", "price": "預購價210\n現場價240", "pre102": "", "pre103": "", "notes": "現場組合價\n任3盒600", "images": []}, {"brand": "冊子生活購", "product": "Noyer · 諾葉果藏 3入 (蛋奶素)", "flavor": "堅果塔3入", "spec": "3入/盒", "price": "預購價150\n現場價170", "pre102": "", "pre103": "", "notes": "現場組合價\n任3盒450", "images": []}, {"brand": "冊子生活購", "product": "La Pause · 金磚四重奏(費南雪) 4入", "flavor": "伯爵火山豆費南雪、靜岡抹茶費南雪、法式青檸費南雪、蜜香榛果費南雪 各1入", "spec": "4入/盒", "price": "預購價150\n現場價170", "pre102": "", "pre103": "", "notes": "現場組合價\n任3盒450", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "鬍子國王手工蛋捲", "flavor": "開心果奶酥", "spec": "1/罐", "price": "400.0", "pre102": "預購任選二罐 600元 限量200組", "pre103": "預購任選四罐+1盒營養脆片 1000元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "鬍子國王手工蛋捲", "flavor": "石磨黑芝麻", "spec": "1/罐", "price": "350.0", "pre102": "預購任選二罐 600元 限量200組", "pre103": "預購任選四罐+1盒營養脆片 1000元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "鬍子國王手工蛋捲", "flavor": "宇治抹茶奶酥", "spec": "1/罐", "price": "380.0", "pre102": "預購任選二罐 600元 限量200組", "pre103": "預購任選四罐+1盒營養脆片 1000元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "鬍子國王手工蛋捲", "flavor": "濃濃花生", "spec": "1/罐", "price": "350.0", "pre102": "預購任選二罐 600元 限量200組", "pre103": "預購任選四罐+1盒營養脆片 1000元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "鬍子國王手工蛋捲", "flavor": "濃醇奶酥", "spec": "1/罐", "price": "350.0", "pre102": "預購任選二罐 600元 限量200組", "pre103": "預購任選四罐+1盒營養脆片 1000元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "鬍子國王手工蛋捲", "flavor": "巧克力奶酥", "spec": "1/罐", "price": "380.0", "pre102": "預購任選二罐 600元 限量200組", "pre103": "預購任選四罐+1盒營養脆片 1000元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "海苔抓餅", "spec": "6入/包", "price": "170.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "香樁抓餅", "spec": "6入/包", "price": "170.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "松子塔香抓餅", "spec": "6入/包", "price": "200.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "南瓜抓餅", "spec": "6入/包", "price": "200.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "紅豆恰恰(餡餅)", "spec": "5入/包", "price": "200.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "起司膨膨(餡餅)", "spec": "5入/包", "price": "200.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "鬍子國王+光頭呂", "product": "光頭呂 職人手作抓餅", "flavor": "品牌保冰袋", "spec": "1/袋", "price": "699.0", "pre102": "預購(現場自取)任選五包+品牌保冰袋1000元 限量200組", "pre103": "預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "手工素G排", "flavor": "", "spec": "", "price": "70.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "素炸魷魚酥", "flavor": "", "spec": "", "price": "70.0", "pre102": "100.0", "pre103": "0.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "塔香鹹酥G", "flavor": "", "spec": "", "price": "70.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "手工龍蝦捲", "flavor": "", "spec": "", "price": "70.0", "pre102": "100.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "蚵仔酥", "flavor": "", "spec": "", "price": "60.0", "pre102": "0.0", "pre103": "0.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "炸水餃", "flavor": "", "spec": "", "price": "60.0", "pre102": "0.0", "pre103": "0.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "綜合炸物", "flavor": "", "spec": "", "price": "150.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "裕寺｜炸物、潤餅", "product": "潤餅 - 原味", "flavor": "", "spec": "", "price": "70.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "慢活•森咖啡", "product": "拿鐵咖啡", "flavor": "經典咖啡+植物奶", "spec": "360ml/袋", "price": "150.0", "pre102": "20.0", "pre103": "80.0", "notes": "冷飲", "images": []}, {"brand": "慢活•森咖啡", "product": "經典美式咖啡", "flavor": "經典咖啡", "spec": "360ml/袋", "price": "80.0", "pre102": "20.0", "pre103": "80.0", "notes": "冷飲\n組合價：2包$150", "images": []}, {"brand": "慢活•森咖啡", "product": "秋桂嫣紅", "flavor": "紅茶+水梨+手工桂花釀熬煮", "spec": "480ml/袋", "price": "80.0", "pre102": "20.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "慢活•森咖啡", "product": "茉莉冰茶（綠茶底）", "flavor": "綠茶+手工茉莉花釀熬煮", "spec": "480ml/袋", "price": "80.0", "pre102": "20.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "慢活•森咖啡", "product": "冬瓜桔了（無咖啡因）", "flavor": "有機冬瓜塊熬煮+新鮮金桔汁", "spec": "480ml/袋", "price": "80.0", "pre102": "20.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "慢活•森咖啡", "product": "酸梅湯（無咖啡因）", "flavor": "8種食材熬煮", "spec": "300ml/袋", "price": "70.0", "pre102": "30.0", "pre103": "120.0", "notes": "冷飲\n組合價：3包$200", "images": []}, {"brand": "慢活•森咖啡", "product": "手作古早味花生糖", "flavor": "手工炒糖搭配雲林花生，低糖脆口不黏牙", "spec": "200g/包", "price": "180.0", "pre102": "0.0", "pre103": "15.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "青檸糖霜腰果磅旦糕", "flavor": "", "spec": "", "price": "100.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "無花果法芙娜可可磅旦糕", "flavor": "", "spec": "", "price": "100.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "有機玫瑰蔓越莓磅旦糕", "flavor": "", "spec": "", "price": "100.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "香蕉核桃磅旦糕", "flavor": "", "spec": "", "price": "100.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "香烤杏仁可可脆片", "flavor": "", "spec": "（袋）", "price": "100.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "德式雪球餅乾", "flavor": "椰子、紫心地瓜、黑芝麻", "spec": "（袋）", "price": "100.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "穎禾甜食", "product": "純素司康", "flavor": "黑糖桂圓荔枝、百香果文山青茶、火龍果四莓果", "spec": "3顆一袋", "price": "200.0", "pre102": "30.0", "pre103": "100.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "油飯飯糰", "flavor": "香菇麻油飯", "spec": "", "price": "60.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "海苔飯捲", "flavor": "韓式泡菜、檸檬基丁\n牛蒡絲、玉米香鬆4種口味", "spec": "", "price": "100.0", "pre102": "0.0", "pre103": "250.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "客家碗粿", "flavor": "菜脯、香菇、碎豆輪", "spec": "", "price": "50.0", "pre102": "300.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "草仔粿", "flavor": "菜脯米", "spec": "", "price": "35.0", "pre102": "300.0", "pre103": "300.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "客家菜包", "flavor": "菜脯、香菇", "spec": "", "price": "35.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "芋粿", "flavor": "芋頭塊", "spec": "", "price": "35.0", "pre102": "200.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "蓮藕糕", "flavor": "黑糖雪蓮子、紅豆、綠豆\n大豆、芋頭、黑糖6種口味", "spec": "", "price": "35.0", "pre102": "300.0", "pre103": "300.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "紫米紅豆", "flavor": "紅豆泥", "spec": "", "price": "35.0", "pre102": "150.0", "pre103": "150.0", "notes": "", "images": []}, {"brand": "天昱坊", "product": "客家黑糖糕", "flavor": "", "spec": "一片約20*20cm圓形", "price": "80.0", "pre102": "160.0", "pre103": "160.0", "notes": "", "images": []}, {"brand": "植得蔬食", "product": "植得燻ㄚ", "flavor": "", "spec": "", "price": "150.0", "pre102": "100.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "植得蔬食", "product": "土托余羹", "flavor": "", "spec": "", "price": "80.0", "pre102": "0.0", "pre103": "200.0", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "1號餐盒", "flavor": "日式和風壽司/櫻桃雪霜/青青小棠/小火腿起司麵包", "spec": "1盒", "price": "126.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "2號餐盒", "flavor": "抹茶紅豆毛巾捲/長生果堡/銅鑼燒/日式和風壽司/小火腿起司", "spec": "1盒", "price": "275.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "3號餐盒", "flavor": "小火腿起司麵包/麻糬燒/櫻桃雪霜/花漾泡芙/脆皮巧克力", "spec": "1盒", "price": "168.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "4號餐盒", "flavor": "藍莓鄉村/芝士煙燻/花漾泡芙/小火腿起司麵包/蕾絲朱古力", "spec": "1盒", "price": "195.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "托斯卡尼旦糕（奶素）", "flavor": "香草旦糕體主廚雙重起司醬", "spec": "4寸", "price": "150.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "托斯卡尼旦糕（奶素）", "flavor": "香草旦糕體主廚雙重起司醬", "spec": "6寸", "price": "260.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "脆皮巧克力卷（奶素）", "flavor": "原味", "spec": "1入", "price": "90.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "香草脆皮巧克力（奶素）", "flavor": "香草", "spec": "1入", "price": "90.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "人氣小火腿起司麵包（奶素）", "flavor": "", "spec": "2入/包", "price": "50.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "鹹旦糕（奶素）", "flavor": "原味玉米香鬆", "spec": "1入/盒", "price": "190.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "鹹旦糕（奶素）", "flavor": "港式橄欖菜乾酪", "spec": "1入/盒", "price": "235.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "鴛鴦餅（奶素）", "flavor": "", "spec": "6入/盒", "price": "520.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "卡帛素食烘焙義式廚房", "product": "乳酪手捲（奶素）", "flavor": "原味/抹茶紅豆/芋泥/芝麻/巧克力/咖啡", "spec": "6入/袋", "price": "350.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "佛光好事集", "product": "南漂阿北 素排骨酥麵線糊", "flavor": "", "spec": "（大）520ml", "price": "80.0", "pre102": "0.0", "pre103": "500.0", "notes": "", "images": ["https://i.ibb.co/VYkpFsz0/image.png"]}, {"brand": "佛光好事集", "product": "南漂阿北 素排骨酥麵線糊", "flavor": "", "spec": "（小）390ml", "price": "60.0", "pre102": "0.0", "pre103": "500.0", "notes": "", "images": ["https://i.ibb.co/VYkpFsz0/image.png"]}, {"brand": "佛光好事集", "product": "高蛋白豆漿湯底（沖泡）預購價", "flavor": "鹹熱湯(杯湯)", "spec": "組合式有附杯碗、湯匙和豆漿湯底沖泡25g", "price": "55.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "佛光好事集", "product": "高蛋白豆漿湯底（沖泡）\n預購價 (50杯以上)", "flavor": "鹹熱湯(杯湯)", "spec": "", "price": "50.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "佛光好事集", "product": "高蛋白豆漿湯底（沖泡）現場價", "flavor": "鹹熱湯(杯湯)", "spec": "", "price": "60.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "佛光好事集", "product": "高蛋白豆漿湯底(沖泡）", "flavor": "鹹熱湯(隨身包)", "spec": "10入/盒", "price": "390.0", "pre102": "", "pre103": "", "notes": "", "images": ["https://i.ibb.co/XrVC7Fh6/10-01.jpg", "https://i.ibb.co/v6DrTkL5/10-03.jpg", "https://i.ibb.co/6cD85Vrg/10-012.jpg", "https://i.ibb.co/0VGYnt8G/01.jpg", "https://i.ibb.co/Vpmx1PbP/02.jpg"]}, {"brand": "佛光好事集", "product": "豌豆分離蛋白粉(1kkg)", "flavor": "經典原味/五穀黑雪花", "spec": "1KG", "price": "1280.0", "pre102": "", "pre103": "", "notes": "", "images": ["https://i.ibb.co/5gykTqHw/1kkg.png"]}, {"brand": "佛光好事集", "product": "甘糀6入禮盒", "flavor": "", "spec": "6入", "price": "600.0", "pre102": "", "pre103": "", "notes": "", "images": ["https://i.ibb.co/TDDCfrJf/6-48-02.jpg"]}, {"brand": "佛光好事集", "product": "甘糀48無禮盒(整箱)", "flavor": "", "spec": "48入", "price": "3500.0", "pre102": "", "pre103": "", "notes": "", "images": ["https://i.ibb.co/TDDCfrJf/6-48-02.jpg", "https://i.ibb.co/Fq8yfts8/6-48-03.jpg"]}, {"brand": "佛光好事集", "product": "給V南洋料理 咖哩G（猴頭菇）", "flavor": "", "spec": "", "price": "120.0", "pre102": "0.0", "pre103": "", "notes": "", "images": ["https://i.ibb.co/4wYb7H20/V-G.jpg"]}, {"brand": "佛光好事集", "product": "給V南洋料理 香料天貝", "flavor": "", "spec": "僅限預購，現場無販售", "price": "100.0", "pre102": "0.0", "pre103": "", "notes": "", "images": ["https://i.ibb.co/r2SNMqQy/V.jpg"]}, {"brand": "每日啡商行", "product": "每日銀耳露一組", "flavor": "微微糖", "spec": "10瓶一組", "price": "預購優惠600", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "每日啡商行", "product": "每日黑木耳露一組", "flavor": "無糖", "spec": "10瓶一組", "price": "預購優惠600", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "每日啡商行", "product": "每日銀耳露+黑木耳露組合", "flavor": "微微糖＋無糖", "spec": "各5瓶一組", "price": "預購優惠600", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "每日啡商行", "product": "每日銀耳露(微微糖)單瓶", "flavor": "微微糖", "spec": "1瓶", "price": "70.0", "pre102": "", "pre103": "", "notes": "", "images": []}, {"brand": "每日啡商行", "product": "每日黑木耳露(無糖)單瓶", "flavor": "無糖", "spec": "1瓶", "price": "70.0", "pre102": "", "pre103": "", "notes": "", "images": []}];
+const BRANDS = [];
+ITEMS.forEach(it => { if(!BRANDS.includes(it.brand)) BRANDS.push(it.brand); });
+const nav = document.getElementById("brandNav");
+BRANDS.forEach((b,i) => {
+  const a = document.createElement("a");
+  a.href = "#brand-"+i;
+  a.textContent = b.replace(/[｜・]/g,"").trim();
+  a.onclick = () => { document.querySelectorAll(".brand-nav a").forEach(x=>x.classList.remove("active")); a.classList.add("active"); };
+  nav.appendChild(a);
+});
+const content = document.getElementById("content");
+let html = "";
+BRANDS.forEach((b,bi) => {
+  const items = ITEMS.filter(it=>it.brand===b);
+  html += '<div class="brand-section" id="brand-'+bi+'" data-brand="'+b+'">';
+  html += '<div class="brand-title"><div class="num">'+(bi+1)+'</div><h2>'+b+'</h2><div class="badge">'+items.length+'項</div></div>';
+  html += '<div class="card-grid">';
+  items.forEach(it=>{
+    const hasImg = it.images && it.images.length>0;
+    let imgHtml;
+    if(hasImg){
+      imgHtml = '<div class="card-img-wrap"><img src="'+it.images[0]+'" alt="'+it.product+'" onclick="openLB(this)" loading="lazy"><span class="photo-badge">'+it.images.length+'張照片</span></div>';
+    } else {
+      imgHtml = '<div class="card-img-wrap"><div class="placeholder">'+it.product+'<br><span style="font-size:11px;opacity:.7">（照片待補）</span></div></div>';
+    }
+    const pre102 = it.pre102 || "";
+    const pre103 = it.pre103 || "";
+    const notes = (it.notes||"").split("\n").filter(n=>n.trim()&&!n.startsWith("*預購者")).join(" ");
+    const flavor = it.flavor ? '<div class="card-flavor">'+it.flavor+'</div>' : "";
+    const spec = it.spec ? '<div class="card-spec">規格：<b>'+it.spec+'</b></div>' : "";
+    const price = it.price ? '<div class="card-price">'+it.price+' <small>元</small></div>' : "";
+    const preHtml = (pre102||pre103) ? '<div class="card-pre">📅 預購：'+[pre102,pre103].filter(x=>x).join("；")+'</div>' : "";
+    const notesHtml = notes ? '<div class="card-notes">'+notes+'</div>' : "";
+    html += '<div class="card" data-search="'+b+' '+it.product+' '+(it.flavor||"")+'">';
+    html += imgHtml;
+    html += '<div class="card-body">';
+    html += '<div class="card-brand">'+b+'</div>';
+    html += '<div class="card-product">'+it.product+'</div>';
+    html += flavor+spec+price+preHtml+notesHtml;
+    html += '<div class="card-cta"><a href="ORDER_LINK" target="_blank">下單 →</a></div>';
+    html += '</div></div>';
+  });
+  html += '</div></div>';
+});
+content.innerHTML = html;
+function doSearch(q){
+  q = q.toLowerCase().trim();
+  let found = 0;
+  document.querySelectorAll(".card").forEach(card=>{
+    const match = !q || card.dataset.search.toLowerCase().includes(q);
+    card.classList.toggle("hidden",!match);
+    if(match) found++;
+  });
+  document.querySelectorAll(".brand-section").forEach(sec=>{
+    sec.style.display = sec.querySelectorAll(".card:not(.hidden)").length>0?"":"none";
+  });
+  document.getElementById("noResult").classList.toggle("show",found===0&&q.length>0);
+}
+function openLB(img){
+  const lb = document.getElementById("lightbox");
+  const card = img.closest(".card");
+  const prod = card ? card.querySelector(".card-product").textContent : "";
+  document.getElementById("lbCaption").textContent = prod;
+  document.getElementById("lbImg").src = img.src;
+  lb.classList.add("show");
+}
+function closeLB(e){
+  if(e.target.id==="lightbox"||e.target.classList.contains("lb-close")){
+    document.getElementById("lightbox").classList.remove("show");
+  }
+}
+window.addEventListener("scroll",()=>{
+  let current = 0;
+  BRANDS.forEach((b,i)=>{
+    const el = document.getElementById("brand-"+i);
+    if(el && el.getBoundingClientRect().top < 100) current = i;
+  });
+  document.querySelectorAll(".brand-nav a").forEach((a,i)=>a.classList.toggle("active",i===current));
+},{passive:true});
+</script>
+</body>
+</html>
