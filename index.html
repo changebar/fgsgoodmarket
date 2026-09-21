@@ -43,17 +43,17 @@ h2 small{font-size:12px;color:var(--muted);margin-left:auto}
 .menu-fab:active{transform:scale(.95)}
 .cart-fab{position:fixed;right:14px;bottom:16px;z-index:35;width:50px;height:50px;border-radius:50%;background:rgba(224,123,31,.75);color:#fff;border:none;font-size:22px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);box-shadow:0 5px 14px rgba(0,0,0,.24);display:flex;align-items:center;justify-content:center;text-decoration:none}
 .cart-fab:active{transform:scale(.95)}
-.drawer{position:fixed;top:0;left:-300px;width:290px;max-width:85vw;height:100vh;background:#fff;z-index:70;transition:left .25s;box-shadow:2px 0 18px rgba(0,0,0,.2)}
+.drawer{position:fixed;top:0;left:-300px;width:290px;max-width:85vw;height:100vh;display:flex;flex-direction:column;background:#fff;z-index:70;transition:left .25s;box-shadow:2px 0 18px rgba(0,0,0,.2)}
 .drawer.open{left:0}
-.drawer .head{display:flex;justify-content:space-between;align-items:center;padding:16px;background:var(--green);color:#fff;font-size:18px;font-weight:800}
+.drawer .head{display:flex;justify-content:space-between;align-items:center;padding:16px;background:var(--green);color:#fff;font-size:18px;font-weight:800;flex-shrink:0}
 .drawer .head button{border:none;background:none;color:#fff;font-size:30px;line-height:1}
-.drawer .list{padding:10px;overflow:auto}
+.drawer .list{padding:10px;overflow:auto;flex:1;min-height:0}
 .drawer .list a{display:block;padding:14px 16px;border-radius:10px;color:var(--green);text-decoration:none;font-size:15px;font-weight:700;margin:6px 0;background:#f3f8f3}
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
 .overlay.show{opacity:1;pointer-events:auto}
-.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:16px}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:16px;overflow:auto;overscroll-behavior:contain}
 .lightbox.show{display:flex}
-.lightbox img{max-width:100%;max-height:85vh;object-fit:contain;border-radius:8px;background:#fff}
+.lightbox img{max-width:calc(100vw - 32px);max-height:calc(100vh - 64px);object-fit:contain;border-radius:8px;background:#fff;flex-shrink:0;margin:auto}
 .lb-close{position:absolute;top:12px;right:14px;color:#fff;font-size:34px;line-height:1;border:none;background:none;z-index:101}
 .foot{text-align:center;padding:24px 16px;font-size:13px;color:#999}
 @media(max-width:767px){
@@ -75,7 +75,7 @@ h2 small{font-size:12px;color:var(--muted);margin-left:auto}
   <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往下單（Google 預購表單）</a>
 </header>
 <div class="toolbar"><input id="q" placeholder="輸入品牌或商品關鍵字，例如：佛光好事集、高蛋白豆漿湯杯" autocomplete="off"></div>
-<div class="chips" id="chips"><a href='#top'>全部</a><a href="#b0">佛光好事集</a><a href="#b1">每日啡商行</a><a href="#b2">卡帛素食烘焙義式廚房</a><a href="#b3">鬍子國王蛋捲+光頭呂手作抓餅</a><a href="#b4">穎禾甜食</a><a href="#b5">綠綠發芽希望工坊</a><a href="#b6">檸檬大叔</a><a href="#b7">十八味草本茶</a><a href="#b8">冊子</a><a href="#b9">天昱坊</a><a href="#b10">植得蔬食</a><a href="#b11">裕寺蔬食炸物｜潤餅</a><a href="#b12">慢活•森咖啡</a><a href="#b13">菓迷方脆腰果</a><a href='#top'>回頂端</a></div>
+<div class="chips" id="chips"><a href='#top'>全部</a><a href="#b0">佛光好事集</a><a href="#b1">每日啡商行</a><a href="#b2">卡帛素食烘焙義式廚房</a><a href="#b3">鬍子國王蛋捲+光頭呂 職人手作抓餅</a><a href="#b4">穎禾甜食</a><a href="#b5">綠綠發芽希望工坊</a><a href="#b6">檸檬大叔</a><a href="#b7">十八味草本茶</a><a href="#b8">冊子</a><a href="#b9">天昱坊</a><a href="#b10">植得蔬食</a><a href="#b11">裕寺蔬食炸物｜潤餅</a><a href="#b12">慢活•森咖啡</a><a href="#b13">菓迷方脆腰果</a><a href='#top'>回頂端</a></div>
 <main id="app"><section id="b0">
         <h2><span>佛光好事集</span><small>7 項</small></h2>
         <div class="grid"><article class="card" data-search="佛光好事集 高蛋白豆漿湯杯（本次活動限定款） 鹹熱湯（杯湯） 組合式附杯碗＋小麥湯匙、豆漿湯底沖泡25g／特別加入蔬菜（海帶芽、蘑菇、四季豆、紅蘿蔔、玉米） 當天售價 60元 ｜ 預購價 55元/杯">
@@ -244,7 +244,7 @@ h2 small{font-size:12px;color:var(--muted);margin-left:auto}
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
         </article></div>
     </section><section id="b3">
-        <h2><span>鬍子國王蛋捲+光頭呂手作抓餅</span><small>10 項</small></h2>
+        <h2><span>鬍子國王蛋捲+光頭呂 職人手作抓餅</span><small>11 項</small></h2>
         <div class="grid"><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 鬍子國王手工蛋捲（開心果奶酥）  1罐 $350">
             <div class="photo"><img src="images/蛋捲開心果奶酥.jpg" alt="鬍子國王手工蛋捲（開心果奶酥）" loading="lazy" decoding="async"><a class="zoom" data-full="images/蛋捲開心果奶酥.jpg" href="images/蛋捲開心果奶酥.jpg" target="_blank" title="放大看圖">＋</a></div>
             <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
@@ -287,38 +287,51 @@ h2 small{font-size:12px;color:var(--muted);margin-left:auto}
             <div class="desc">規格：1罐</div><div class="price">$350</div><div class="note">預購任選二罐 600元 限量200組／預購任選四罐+1盒營養脆片 1000元 限量200組</div>
             <span class="tag b-transfer">需匯款</span>
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
-        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 職人手作抓餅（海苔）  1袋 $350">
-            <div class="photo"><div class="ph">照片待補</div></div>
-            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
-            <div class="title">光頭呂 職人手作抓餅（海苔）</div>
-            <div class="desc">規格：1袋</div><div class="price">$350</div><div class="note">僅接受預購匯款</div>
+        </article><article class="card" data-search="光頭呂 職人手作抓餅 光頭呂 職人手作抓餅 海苔  6入/包 $170">
+            <div class="photo"><img src="images/抓餅海苔.jpg" alt="光頭呂 職人手作抓餅 海苔" loading="lazy" decoding="async"><a class="zoom" data-full="images/抓餅海苔.jpg" href="images/抓餅海苔.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">光頭呂 職人手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅 海苔</div>
+            <div class="desc">規格：6入/包</div><div class="price">$170</div><div class="note">預購(現場自取)任選五包+品牌保冰袋1000元 限量200組／預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組</div>
             <span class="tag b-transfer">需匯款</span>
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
-        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 職人手作抓餅（香椿）  1袋 $350">
-            <div class="photo"><div class="ph">照片待補</div></div>
-            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
-            <div class="title">光頭呂 職人手作抓餅（香椿）</div>
-            <div class="desc">規格：1袋</div><div class="price">$350</div><div class="note">僅接受預購匯款</div>
+        
+        </article><article class="card" data-search="光頭呂 職人手作抓餅 光頭呂 職人手作抓餅 香樁  6入/包 $170">
+            <div class="photo"><img src="images/抓餅香樁.jpg" alt="光頭呂 職人手作抓餅 香樁" loading="lazy" decoding="async"><a class="zoom" data-full="images/抓餅香樁.jpg" href="images/抓餅香樁.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">光頭呂 職人手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅 香樁</div>
+            <div class="desc">規格：6入/包</div><div class="price">$170</div><div class="note">預購(現場自取)任選五包+品牌保冰袋1000元 限量200組／預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組</div>
             <span class="tag b-transfer">需匯款</span>
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
-        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 起司膨膨（餡餅） 起司 1個 $60">
-            <div class="photo"><div class="ph">照片待補</div></div>
-            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
-            <div class="title">光頭呂 起司膨膨（餡餅）</div>
-            <div class="desc">起司</div><div class="desc">規格：1個</div><div class="price">$60</div><div class="note">僅接受預購匯款</div>
+        
+        </article><article class="card" data-search="光頭呂 職人手作抓餅 光頭呂 職人手作抓餅 松子塔香  6入/包 $200">
+            <div class="photo"><img src="images/抓餅松子塔香.jpg" alt="光頭呂 職人手作抓餅 松子塔香" loading="lazy" decoding="async"><a class="zoom" data-full="images/抓餅松子塔香.jpg" href="images/抓餅松子塔香.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">光頭呂 職人手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅 松子塔香</div>
+            <div class="desc">規格：6入/包</div><div class="price">$200</div><div class="note">預購(現場自取)任選五包+品牌保冰袋1000元 限量200組／預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組</div>
             <span class="tag b-transfer">需匯款</span>
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
-        </article><article class="card" data-search="鬍子國王蛋捲+光頭呂手作抓餅 光頭呂 品牌保冰袋  1袋 $100">
-            <div class="photo"><div class="ph">照片待補</div></div>
-            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
-            <div class="title">光頭呂 品牌保冰袋</div>
-            <div class="desc">規格：1袋</div><div class="price">$100</div><div class="note">僅接受預購匯款</div>
+        
+        </article><article class="card" data-search="光頭呂 職人手作抓餅 光頭呂 職人手作抓餅 南瓜  6入/包 $200">
+            <div class="photo"><img src="images/抓餅南瓜.jpg" alt="光頭呂 職人手作抓餅 南瓜" loading="lazy" decoding="async"><a class="zoom" data-full="images/抓餅南瓜.jpg" href="images/抓餅南瓜.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">光頭呂 職人手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅 南瓜</div>
+            <div class="desc">規格：6入/包</div><div class="price">$200</div><div class="note">預購(現場自取)任選五包+品牌保冰袋1000元 限量200組／預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組</div>
             <span class="tag b-transfer">需匯款</span>
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
-            <div class="photo"><div class="ph">照片待補</div></div>
-            <div class="brand-tag">鬍子國王蛋捲+光頭呂手作抓餅</div>
-            <div class="title">光頭呂 職人手作抓餅</div>
-            <div class="note">僅接受預購匯款</div>
+        
+        </article><article class="card" data-search="光頭呂 職人手作抓餅 光頭呂 職人手作抓餅 紅豆恰恰  5入/包 $200">
+            <div class="photo"><img src="images/抓餅紅豆恰恰.jpg" alt="光頭呂 職人手作抓餅 紅豆恰恰" loading="lazy" decoding="async"><a class="zoom" data-full="images/抓餅紅豆恰恰.jpg" href="images/抓餅紅豆恰恰.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">光頭呂 職人手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅 紅豆恰恰</div>
+            <div class="desc">規格：5入/包</div><div class="price">$200</div><div class="note">預購(現場自取)任選五包+品牌保冰袋1000元 限量200組／預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組</div>
+            <span class="tag b-transfer">需匯款</span>
+            <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
+        
+        </article><article class="card" data-search="光頭呂 職人手作抓餅 光頭呂 職人手作抓餅 起司膨膨  5入/包 $200">
+            <div class="photo"><img src="images/抓餅起司膨膨.jpg" alt="光頭呂 職人手作抓餅 起司膨膨" loading="lazy" decoding="async"><a class="zoom" data-full="images/抓餅起司膨膨.jpg" href="images/抓餅起司膨膨.jpg" target="_blank" title="放大看圖">＋</a></div>
+            <div class="brand-tag">光頭呂 職人手作抓餅</div>
+            <div class="title">光頭呂 職人手作抓餅 起司膨膨</div>
+            <div class="desc">規格：5入/包</div><div class="price">$200</div><div class="note">預購(現場自取)任選五包+品牌保冰袋1000元 限量200組／預購(冷凍宅配到家)任選五包+品牌保冰袋1200元 限量200組</div>
             <span class="tag b-transfer">需匯款</span>
             <div class="footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank">前往預購表單</a></div>
         </article></div>
@@ -764,7 +777,7 @@ h2 small{font-size:12px;color:var(--muted);margin-left:auto}
 <a class="cart-fab" href="https://docs.google.com/forms/d/e/1FAIpQLSekpk-yB6kQfnKDahotfbXM-EVewj7lyErBbxAjiVyRkzrhdw/viewform" target="_blank" aria-label="前往預購表單">🛒</a>
 <aside class="drawer" id="drawer">
   <div class="head"><span>店家</span><button id="closeDrawer" aria-label="關閉">×</button></div>
-  <nav class="list"><a href="#b0">佛光好事集</a><a href="#b1">每日啡商行</a><a href="#b2">卡帛素食烘焙義式廚房</a><a href="#b3">鬍子國王蛋捲+光頭呂手作抓餅</a><a href="#b4">穎禾甜食</a><a href="#b5">綠綠發芽希望工坊</a><a href="#b6">檸檬大叔</a><a href="#b7">十八味草本茶</a><a href="#b8">冊子</a><a href="#b9">天昱坊</a><a href="#b10">植得蔬食</a><a href="#b11">裕寺蔬食炸物｜潤餅</a><a href="#b12">慢活•森咖啡</a><a href="#b13">菓迷方脆腰果</a></nav>
+  <nav class="list"><a href="#b0">佛光好事集</a><a href="#b1">每日啡商行</a><a href="#b2">卡帛素食烘焙義式廚房</a><a href="#b3">鬍子國王蛋捲+光頭呂 職人手作抓餅</a><a href="#b4">穎禾甜食</a><a href="#b5">綠綠發芽希望工坊</a><a href="#b6">檸檬大叔</a><a href="#b7">十八味草本茶</a><a href="#b8">冊子</a><a href="#b9">天昱坊</a><a href="#b10">植得蔬食</a><a href="#b11">裕寺蔬食炸物｜潤餅</a><a href="#b12">慢活•森咖啡</a><a href="#b13">菓迷方脆腰果</a></nav>
 </aside>
 <div class="overlay" id="overlay"></div>
 <div class="lightbox" id="lightbox"><button class="lb-close" id="lbClose" aria-label="關閉">×</button><img id="lbImg" alt="放大圖"></div>
