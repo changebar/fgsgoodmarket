@@ -46,6 +46,8 @@ main{max-width:1080px;margin:0 auto;padding:18px 16px 90px}
 
 section{padding:12px 0}
 
+section[id]{scroll-margin-top:112px}
+
 h2{display:flex;align-items:center;gap:8px;font-size:18px;margin:16px 0 12px;padding:12px 16px;background:var(--card);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 
 h2 small{font-size:12px;color:var(--muted);margin-left:auto}
@@ -1636,6 +1638,17 @@ h2 small{font-size:12px;color:var(--muted);margin-left:auto}
 <div class="lightbox" id="lightbox"><button class="lb-close" id="lbClose" aria-label="關閉">×</button><img id="lbImg" alt=""></div>
 
 <script>
+
+// 開啟頁面時強制捲回最上面（避免手機瀏覽器還原上次的捲動位置）
+(function(){
+  function toTop(){
+    if(location.hash){return;} // 深連結（如 #b3）保留錨點行為
+    window.scrollTo(0,0);
+  }
+  toTop();
+  window.addEventListener('load',toTop);
+  window.addEventListener('pageshow',function(e){ if(e.persisted) toTop(); });
+})();
 
 // Lightbox (define first so handlers below can use it)
 
